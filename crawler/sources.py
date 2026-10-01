@@ -21,7 +21,9 @@ UA = (
     "(KHTML, like Gecko) Chrome/126.0 Safari/537.36"
 )
 HEADERS = {"User-Agent": UA, "Accept-Language": "ko-KR,ko;q=0.9,en;q=0.8"}
-DELAY_SEC = 2.0  # 같은 사이트에 연속 요청할 때 간격
+DELAY_SEC = 1.5  # 같은 사이트에 연속 요청할 때 간격
+GOTO_TIMEOUT_MS = 20000  # 페이지 접속 제한 시간
+MAX_CONSECUTIVE_FAILS = 2  # 이만큼 연속 접속 실패하면 그 사이트는 건너뜀
 
 
 @dataclass
@@ -142,18 +144,30 @@ def crawl_rendered(site_key: str, queries: list[str], browser) -> list[Posting]:
     cfg = SITES[site_key]
     link_re = re.compile(cfg["link_pattern"])
     found: dict[str, Posting] = {}
+    fails = 0
+    last_error = ""
     page = browser.new_page(user_agent=UA, locale="ko-KR")
     try:
         for q in queries:
             url = cfg["search_url"].format(q=quote(q))
-            page.goto(url, wait_until="domcontentloaded", timeout=45000)
             try:
-                page.wait_for_load_state("networkidle", timeout=15000)
+                page.goto(url, wait_until="domcontentloaded", timeout=GOTO_TIMEOUT_MS)
+            except Exception as e:
+                # 접속 실패: 검색어 하나만 건너뛰고, 연속으로 실패하면 사이트 전체를 중단
+                fails += 1
+                last_error = f"{type(e).__name__}: {str(e).splitlines()[0]}"
+                print(f"  [{site_key}] '{q}' 접속 실패 ({fails}회 연속): {last_error}")
+                if fails >= MAX_CONSECUTIVE_FAILS:
+                    break
+                continue
+            fails = 0
+            try:
+                page.wait_for_load_state("networkidle", timeout=5000)
             except Exception:
                 pass
             for _ in range(3):  # 무한 스크롤 대응
                 page.mouse.wheel(0, 4000)
-                page.wait_for_timeout(800)
+                page.wait_for_timeout(600)
             for item in page.evaluate(_EXTRACT_JS, cfg["link_pattern"]):
                 m = link_re.search(item["href"])
                 if not m:
@@ -174,6 +188,8 @@ def crawl_rendered(site_key: str, queries: list[str], browser) -> list[Posting]:
             time.sleep(DELAY_SEC)
     finally:
         page.close()
+    if not found and last_error:
+        raise RuntimeError(f"접속 실패 (해외 IP 차단 가능성): {last_error}")
     return list(found.values())
 
 
