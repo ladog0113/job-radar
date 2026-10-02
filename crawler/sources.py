@@ -24,6 +24,7 @@ HEADERS = {"User-Agent": UA, "Accept-Language": "ko-KR,ko;q=0.9,en;q=0.8"}
 DELAY_SEC = 1.5  # 같은 사이트에 연속 요청할 때 간격
 GOTO_TIMEOUT_MS = 20000  # 페이지 접속 제한 시간
 MAX_CONSECUTIVE_FAILS = 2  # 이만큼 연속 접속 실패하면 그 사이트는 건너뜀
+RENDER_WAIT_MS = 15000  # 공고 목록이 그려질 때까지 기다리는 최대 시간
 
 
 @dataclass
@@ -161,13 +162,21 @@ def crawl_rendered(site_key: str, queries: list[str], browser) -> list[Posting]:
                     break
                 continue
             fails = 0
+            # 공고 링크가 화면에 나타날 때까지 기다린다 (자바스크립트로 그려지는 사이트 대응)
+            try:
+                page.wait_for_function(
+                    "(p) => [...document.querySelectorAll('a[href]')].some(a => new RegExp(p).test(a.href))",
+                    arg=cfg["link_pattern"], timeout=RENDER_WAIT_MS,
+                )
+            except Exception:
+                pass
             try:
                 page.wait_for_load_state("networkidle", timeout=5000)
             except Exception:
                 pass
             for _ in range(3):  # 무한 스크롤 대응
                 page.mouse.wheel(0, 4000)
-                page.wait_for_timeout(600)
+                page.wait_for_timeout(800)
             for item in page.evaluate(_EXTRACT_JS, cfg["link_pattern"]):
                 m = link_re.search(item["href"])
                 if not m:
@@ -191,6 +200,41 @@ def crawl_rendered(site_key: str, queries: list[str], browser) -> list[Posting]:
     if not found and last_error:
         raise RuntimeError(f"접속 실패 (해외 IP 차단 가능성): {last_error}")
     return list(found.values())
+
+
+# ---------------------------------------------------------------------------
+# 원티드: 검색 API (JSON). 막히면 브라우저 방식으로 다시 시도
+# ---------------------------------------------------------------------------
+def crawl_wanted(queries: list[str], browser) -> list[Posting]:
+    found: dict[str, Posting] = {}
+    try:
+        for q in queries:
+            url = (
+                "https://www.wanted.co.kr/api/chaos/search/v1/position"
+                f"?query={quote(q)}&country=kr&years=-1&sort=job.latest_order&limit=50&offset=0"
+            )
+            r = requests.get(url, headers=HEADERS | {"Referer": "https://www.wanted.co.kr/"}, timeout=30)
+            r.raise_for_status()
+            for d in r.json().get("data", []):
+                ext_id = str(d.get("id", ""))
+                if not ext_id:
+                    continue
+                if ext_id in found:
+                    found[ext_id].queries.append(q)
+                    continue
+                a_from, a_to = d.get("annual_from"), d.get("annual_to")
+                career = "" if a_from is None else ("신입" if a_to in (0, 1) and a_from == 0 else f"경력 {a_from}~{a_to}년")
+                found[ext_id] = Posting(
+                    source="wanted", ext_id=ext_id, title=d.get("position", ""),
+                    company=(d.get("company") or {}).get("name", ""), career=career,
+                    url=f"https://www.wanted.co.kr/wd/{ext_id}", queries=[q],
+                )
+            time.sleep(DELAY_SEC)
+    except Exception as e:
+        print(f"  [wanted] API 실패, 브라우저 방식으로 재시도: {e}")
+    if found:
+        return list(found.values())
+    return crawl_rendered("wanted", queries, browser)
 
 
 # ---------------------------------------------------------------------------
