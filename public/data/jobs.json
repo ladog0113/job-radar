@@ -1,5 +1,186 @@
 [
  {
+  "id": "saramin:55179984",
+  "source": "saramin",
+  "title": "신용카드사 AI & 클라우드 보안 기획·운영 담당 (대리/과장급)",
+  "company": "(주)에이스파트너스서치펌",
+  "location": "서울 중구",
+  "career": "경력 5~15년",
+  "deadline": "~ 10/16(금)",
+  "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55179984",
+  "category": "AI 인프라/MLOps",
+  "score": 105,
+  "queries": [
+   "AI 서비스 기획",
+   "AI 인프라"
+  ],
+  "first_seen": "2026-10-02",
+  "last_seen": "2026-10-02",
+  "stale": false
+ },
+ {
+  "id": "saramin:55185357",
+  "source": "saramin",
+  "title": "[AI 솔루션 기업] 서비스 기획 (팀장~실장, 정규직)",
+  "company": "(주)리앤파트너",
+  "location": "서울 서초구",
+  "career": "경력8년↑",
+  "deadline": "~ 10/17(토)",
+  "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55185357",
+  "category": "AI 서비스 기획",
+  "score": 65,
+  "queries": [
+   "AI PM",
+   "AI 기획",
+   "AI 서비스 기획",
+   "AI 플랫폼"
+  ],
+  "first_seen": "2026-10-02",
+  "last_seen": "2026-10-02",
+  "stale": false
+ },
+ {
+  "id": "saramin:55184787",
+  "source": "saramin",
+  "title": "AI 대화 기술로 앱을 기획, 출시할 서비스 기획자를 모십니다.",
+  "company": "(주)스토익엔터테인먼트",
+  "location": "서울 마포구",
+  "career": "경력3년↑",
+  "deadline": "~ 11/01(일)",
+  "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55184787",
+  "category": "AI 서비스 기획",
+  "score": 65,
+  "queries": [
+   "AI PM",
+   "AI PO",
+   "AI 기획",
+   "AI 서비스 기획",
+   "AI 플랫폼",
+   "LLM 기획"
+  ],
+  "first_seen": "2026-10-02",
+  "last_seen": "2026-10-02",
+  "stale": false
+ },
+ {
+  "id": "saramin:55182242",
+  "source": "saramin",
+  "title": "포항공과대학교 친환경소재대학원 PM Lab 연구원 모집 (LLM개발)",
+  "company": "포항공과대학교산학협력단",
+  "location": "경북 포항시 남구",
+  "career": "경력무관",
+  "deadline": "~ 10/31(토)",
+  "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55182242",
+  "category": "AI 서비스 기획",
+  "score": 65,
+  "queries": [
+   "AI PM"
+  ],
+  "first_seen": "2026-10-02",
+  "last_seen": "2026-10-02",
+  "stale": false
+ },
+ {
+  "id": "saramin:55181418",
+  "source": "saramin",
+  "title": "Product Manager(금융 AI)",
+  "company": "(주)피플케어코리아",
+  "location": "서울 강남구",
+  "career": "경력 5~15년",
+  "deadline": "채용시",
+  "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55181418",
+  "category": "AI 서비스 기획",
+  "score": 65,
+  "queries": [
+   "AI PM",
+   "Product Manager AI",
+   "프로덕트 매니저 AI"
+  ],
+  "first_seen": "2026-10-02",
+  "last_seen": "2026-10-02",
+  "stale": false
+ },
+ {
+  "id": "saramin:55175143",
+  "source": "saramin",
+  "title": "기업·솔루션 전략 및 AI 서비스 기획 담당자 모집",
+  "company": "(주)나온소프트",
+  "location": "서울 강남구",
+  "career": "경력3년↑",
+  "deadline": "~ 10/31(토)",
+  "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55175143",
+  "category": "AI 서비스 기획",
+  "score": 65,
+  "queries": [
+   "AI PO",
+   "에이전트 기획"
+  ],
+  "first_seen": "2026-10-02",
+  "last_seen": "2026-10-02",
+  "stale": false
+ },
+ {
+  "id": "saramin:55172690",
+  "source": "saramin",
+  "title": "[카타르 본사] AI·AEC Digital Product 기획·개발 인재 채용",
+  "company": "에너지엑스(주)",
+  "location": "아시아·중동 카타르",
+  "career": "경력무관",
+  "deadline": "~ 10/31(토)",
+  "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55172690",
+  "category": "AI 서비스 기획",
+  "score": 65,
+  "queries": [
+   "LLM 기획",
+   "Product Manager AI",
+   "에이전트 기획",
+   "프로덕트 매니저 AI"
+  ],
+  "first_seen": "2026-10-02",
+  "last_seen": "2026-10-02",
+  "stale": false
+ },
+ {
+  "id": "saramin:55169644",
+  "source": "saramin",
+  "title": "[웰니스·D2C 전문기업] AI CX Product Manager 채용 /서울 중구",
+  "company": "넥스트커리어솔루션",
+  "location": "서울 중구",
+  "career": "경력5년↑",
+  "deadline": "~ 10/14(수)",
+  "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55169644",
+  "category": "AI 서비스 기획",
+  "score": 65,
+  "queries": [
+   "LLM 기획",
+   "Product Manager AI",
+   "에이전트 기획",
+   "프로덕트 매니저 AI"
+  ],
+  "first_seen": "2026-10-02",
+  "last_seen": "2026-10-02",
+  "stale": false
+ },
+ {
+  "id": "saramin:55170379",
+  "source": "saramin",
+  "title": "[더아이엠씨] AI 사업기획팀 채용(경력)",
+  "company": "㈜더아이엠씨",
+  "location": "대구 수성구",
+  "career": "경력2년↑",
+  "deadline": "~ 10/08(목)",
+  "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55170379",
+  "category": "AI 서비스 기획",
+  "score": 65,
+  "queries": [
+   "LLM 기획",
+   "에이전트 기획"
+  ],
+  "first_seen": "2026-10-02",
+  "last_seen": "2026-10-02",
+  "stale": false
+ },
+ {
   "id": "remember:343547",
   "source": "remember",
   "title": "데이터센터 상품전략/기획",
@@ -54,7 +235,7 @@
    "프로덕트 매니저 AI"
   ],
   "first_seen": "2026-10-01",
-  "last_seen": "2026-10-01",
+  "last_seen": "2026-10-02",
   "stale": false
  },
  {
@@ -97,7 +278,7 @@
    "LLMOps"
   ],
   "first_seen": "2026-10-01",
-  "last_seen": "2026-10-01",
+  "last_seen": "2026-10-02",
   "stale": false
  },
  {
@@ -199,7 +380,7 @@
    "프로덕트 매니저 AI"
   ],
   "first_seen": "2026-10-01",
-  "last_seen": "2026-10-01",
+  "last_seen": "2026-10-02",
   "stale": false
  },
  {
@@ -217,7 +398,7 @@
    "LLMOps"
   ],
   "first_seen": "2026-10-01",
-  "last_seen": "2026-10-01",
+  "last_seen": "2026-10-02",
   "stale": false
  },
  {
@@ -235,13 +416,13 @@
    "LLMOps"
   ],
   "first_seen": "2026-10-01",
-  "last_seen": "2026-10-01",
+  "last_seen": "2026-10-02",
   "stale": false
  },
  {
   "id": "saramin:55162645",
   "source": "saramin",
-  "title": "[신입/경력] 자사보안솔루션·SW유지보수·시스템운영/공공사업PM/AI엔지니어/기술연구소/경영전략 채용",
+  "title": "시스템운영/SW유지보수/PM/AI/기술연구소/경영전략",
   "company": "(주)넷코아테크",
   "location": "서울 성동구",
   "career": "신입·경력",
@@ -254,7 +435,7 @@
    "LLM 기획"
   ],
   "first_seen": "2026-10-01",
-  "last_seen": "2026-10-01",
+  "last_seen": "2026-10-02",
   "stale": false
  },
  {
@@ -293,7 +474,7 @@
    "프로덕트 매니저 AI"
   ],
   "first_seen": "2026-10-01",
-  "last_seen": "2026-10-01",
+  "last_seen": "2026-10-02",
   "stale": false
  },
  {
@@ -703,10 +884,11 @@
   "category": "AI 서비스 기획",
   "score": 65,
   "queries": [
-   "LLMOps product manager"
+   "LLMOps product manager",
+   "MLOps product manager"
   ],
   "first_seen": "2026-10-01",
-  "last_seen": "2026-10-01",
+  "last_seen": "2026-10-02",
   "stale": false
  }
 ]

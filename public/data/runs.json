@@ -68,5 +68,75 @@
    }
   ],
   "finished_at": "2026-10-01T09:02:25+09:00"
+ },
+ {
+  "started_at": "2026-10-02T10:18:12+09:00",
+  "sources": [
+   {
+    "source": "wanted",
+    "label": "원티드",
+    "fetched": 0,
+    "matched": 0,
+    "new": 0,
+    "error": "0건 수집: 검색 주소나 링크 패턴이 바뀌었을 수 있음"
+   },
+   {
+    "source": "saramin",
+    "label": "사람인",
+    "fetched": 339,
+    "matched": 16,
+    "new": 9,
+    "error": null
+   },
+   {
+    "source": "jobkorea",
+    "label": "잡코리아",
+    "fetched": 0,
+    "matched": 0,
+    "new": 0,
+    "error": "RuntimeError: 접속 실패 (해외 IP 차단 가능성): TimeoutError: Page.goto: Timeout 20000ms exceeded."
+   },
+   {
+    "source": "jobplanet",
+    "label": "잡플래닛",
+    "fetched": 0,
+    "matched": 0,
+    "new": 0,
+    "error": "0건 수집: 검색 주소나 링크 패턴이 바뀌었을 수 있음"
+   },
+   {
+    "source": "jasoseol",
+    "label": "자소설닷컴",
+    "fetched": 0,
+    "matched": 0,
+    "new": 0,
+    "error": "0건 수집: 검색 주소나 링크 패턴이 바뀌었을 수 있음"
+   },
+   {
+    "source": "remember",
+    "label": "리멤버",
+    "fetched": 0,
+    "matched": 0,
+    "new": 0,
+    "error": "0건 수집: 검색 주소나 링크 패턴이 바뀌었을 수 있음"
+   },
+   {
+    "source": "catch",
+    "label": "캐치",
+    "fetched": 0,
+    "matched": 0,
+    "new": 0,
+    "error": "0건 수집: 검색 주소나 링크 패턴이 바뀌었을 수 있음"
+   },
+   {
+    "source": "linkedin",
+    "label": "링크드인",
+    "fetched": 59,
+    "matched": 1,
+    "new": 0,
+    "error": null
+   }
+  ],
+  "finished_at": "2026-10-02T10:26:36+09:00"
  }
 ]
