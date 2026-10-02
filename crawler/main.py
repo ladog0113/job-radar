@@ -15,7 +15,7 @@ from pathlib import Path
 
 from classify import classify
 from config import SEARCH_QUERIES, STALE_DAYS
-from sources import LABELS, SITES, crawl_linkedin, crawl_rendered, crawl_saramin
+from sources import LABELS, SITES, crawl_linkedin, crawl_rendered, crawl_saramin, crawl_wanted
 
 KST = timezone(timedelta(hours=9))
 DATA_DIR = Path(__file__).resolve().parent.parent / "public" / "data"
@@ -54,6 +54,8 @@ def run(sites: list[str]) -> None:
                     postings = crawl_saramin(SEARCH_QUERIES)
                 elif site == "linkedin":
                     postings = crawl_linkedin(SEARCH_QUERIES)
+                elif site == "wanted":
+                    postings = crawl_wanted(SEARCH_QUERIES, browser)
                 else:
                     postings = crawl_rendered(site, SEARCH_QUERIES, browser)
                 entry["fetched"] = len(postings)
