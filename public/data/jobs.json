@@ -1,5 +1,27 @@
 [
  {
+  "id": "remember:345106",
+  "source": "remember",
+  "title": "[BC카드] AI 및 클라우드 보안 기획",
+  "company": "BC카드(주)",
+  "location": "",
+  "career": "",
+  "deadline": "",
+  "url": "https://career.rememberapp.co.kr/job/posting/345106?postQuerySessionId=ba0159b8-4954-4682-9299-5d27ae8794e7&jdViewSource=inweb_list&channel=inweb_list&source=inweb_list&isHighlight=false",
+  "category": "AI 인프라/MLOps",
+  "score": 105,
+  "queries": [
+   "AI PM",
+   "AI PO",
+   "AI 기획",
+   "AI 서비스 기획",
+   "AI 인프라"
+  ],
+  "first_seen": "2026-10-06",
+  "last_seen": "2026-10-06",
+  "stale": false
+ },
+ {
   "id": "saramin:55191574",
   "source": "saramin",
   "title": "AI agent 서비스 기획자 / UX",
@@ -12,6 +34,24 @@
   "score": 85,
   "queries": [
    "에이전트 기획"
+  ],
+  "first_seen": "2026-10-06",
+  "last_seen": "2026-10-06",
+  "stale": false
+ },
+ {
+  "id": "saramin:55208442",
+  "source": "saramin",
+  "title": "어반데이터랩 AI 기반 디지털 의료기기 PM 모집",
+  "company": "(주)어반데이터랩",
+  "location": "서울 마포구",
+  "career": "경력5년↑",
+  "deadline": "~ 11/05(목)",
+  "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55208442",
+  "category": "AI 서비스 기획",
+  "score": 70,
+  "queries": [
+   "AI PM"
   ],
   "first_seen": "2026-10-06",
   "last_seen": "2026-10-06",
@@ -62,7 +102,7 @@
   "location": "",
   "career": "경력무관 10",
   "deadline": "",
-  "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50084244?Oem_Code=C1&logpath=1&stext=AI+PM&listno=18&sc=630",
+  "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50084244?Oem_Code=C1&logpath=1&stext=AI+PM&listno=19&sc=630",
   "category": "AI 서비스 기획",
   "score": 65,
   "queries": [
@@ -80,7 +120,7 @@
   "location": "",
   "career": "경력10년↑ 09",
   "deadline": "",
-  "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/49994211?Oem_Code=C1&logpath=1&stext=AI+PM&listno=19&sc=630",
+  "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/49994211?Oem_Code=C1&logpath=1&stext=AI+PM&listno=20&sc=630",
   "category": "AI 서비스 기획",
   "score": 65,
   "queries": [
@@ -98,7 +138,7 @@
   "location": "",
   "career": "",
   "deadline": "",
-  "url": "https://career.rememberapp.co.kr/job/posting/344966?postQuerySessionId=eb69c511-8501-4a34-b7a0-fe19d7dc5bfb&jdViewSource=inweb_list&channel=inweb_list&source=inweb_list&isHighlight=false",
+  "url": "https://career.rememberapp.co.kr/job/posting/344966?postQuerySessionId=a433b960-4599-4d3e-8610-89c763fe54aa&jdViewSource=inweb_list&channel=inweb_list&source=inweb_list&isHighlight=false",
   "category": "AI 서비스 기획",
   "score": 65,
   "queries": [
@@ -121,6 +161,149 @@
   "score": 65,
   "queries": [
    "LLMOps product manager"
+  ],
+  "first_seen": "2026-10-06",
+  "last_seen": "2026-10-06",
+  "stale": false
+ },
+ {
+  "id": "saramin:55212383",
+  "source": "saramin",
+  "title": "(주)이음네트웍 AI 활용 기획·제안서 작성 및 프로그램 개발 채용 공고",
+  "company": "(주)이음네트웍",
+  "location": "경기 용인시 처인구",
+  "career": "경력무관",
+  "deadline": "~ 11/05(목)",
+  "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55212383",
+  "category": "AI 서비스 기획",
+  "score": 65,
+  "queries": [
+   "AI 기획",
+   "AI 서비스 기획",
+   "AI 인프라",
+   "GPU",
+   "LLM 기획"
+  ],
+  "first_seen": "2026-10-06",
+  "last_seen": "2026-10-06",
+  "stale": false
+ },
+ {
+  "id": "saramin:55209245",
+  "source": "saramin",
+  "title": "AI서비스기획 차(부)장급 경력사원 모집",
+  "company": "(주) 케인앤클루컨설팅",
+  "location": "서울 중구",
+  "career": "경력 13~20년",
+  "deadline": "~ 10/21(수)",
+  "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55209245",
+  "category": "AI 서비스 기획",
+  "score": 65,
+  "queries": [
+   "AI PM",
+   "AI PO",
+   "AI 인프라",
+   "LLM 기획",
+   "에이전트 기획"
+  ],
+  "first_seen": "2026-10-06",
+  "last_seen": "2026-10-06",
+  "stale": false
+ },
+ {
+  "id": "saramin:55212048",
+  "source": "saramin",
+  "title": "[대기업] 데이터 거버넌스 기획 (과장,차장급)",
+  "company": "(주)비에이블컨설팅그룹",
+  "location": "서울 중구",
+  "career": "경력8년↑",
+  "deadline": "~ 10/18(일)",
+  "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55212048",
+  "category": "AI 서비스 기획",
+  "score": 65,
+  "queries": [
+   "AI 기획",
+   "AI 서비스 기획"
+  ],
+  "first_seen": "2026-10-06",
+  "last_seen": "2026-10-06",
+  "stale": false
+ },
+ {
+  "id": "saramin:55212046",
+  "source": "saramin",
+  "title": "AI사업 및 솔루션 기획 업무담당자 경력 채용",
+  "company": "디딤(주)",
+  "location": "서울 구로구",
+  "career": "경력 5~15년",
+  "deadline": "~ 11/05(목)",
+  "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55212046",
+  "category": "AI 서비스 기획",
+  "score": 65,
+  "queries": [
+   "AI 기획",
+   "AI 서비스 기획"
+  ],
+  "first_seen": "2026-10-06",
+  "last_seen": "2026-10-06",
+  "stale": false
+ },
+ {
+  "id": "saramin:55207313",
+  "source": "saramin",
+  "title": "[(주)픽스업] AI 서비스 PM 경력 채용",
+  "company": "(주)픽스업",
+  "location": "경기 김포시",
+  "career": "경력2년↑",
+  "deadline": "~ 11/05(목)",
+  "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55207313",
+  "category": "AI 서비스 기획",
+  "score": 65,
+  "queries": [
+   "LLM 기획",
+   "Product Manager AI",
+   "프로덕트 매니저 AI"
+  ],
+  "first_seen": "2026-10-06",
+  "last_seen": "2026-10-06",
+  "stale": false
+ },
+ {
+  "id": "saramin:55207176",
+  "source": "saramin",
+  "title": "[(주)픽스업] AI 서비스 PM 경력 채용",
+  "company": "(주)픽스업",
+  "location": "경기 김포시",
+  "career": "경력2년↑",
+  "deadline": "~ 11/05(목)",
+  "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55207176",
+  "category": "AI 서비스 기획",
+  "score": 65,
+  "queries": [
+   "LLM 기획",
+   "프로덕트 매니저 AI"
+  ],
+  "first_seen": "2026-10-06",
+  "last_seen": "2026-10-06",
+  "stale": false
+ },
+ {
+  "id": "remember:345062",
+  "source": "remember",
+  "title": "[룰루랩] 화장품 상품기획 BM (AI X 더마 뷰티 스킨케어)",
+  "company": "(주)룰루랩",
+  "location": "",
+  "career": "3년 이상",
+  "deadline": "",
+  "url": "https://career.rememberapp.co.kr/job/posting/345062?postQuerySessionId=ba0159b8-4954-4682-9299-5d27ae8794e7&jdViewSource=inweb_list&channel=inweb_list&source=inweb_list&isHighlight=false",
+  "category": "AI 서비스 기획",
+  "score": 65,
+  "queries": [
+   "AI PM",
+   "AI PO",
+   "AI 기획",
+   "AI 서비스 기획",
+   "AI 인프라"
   ],
   "first_seen": "2026-10-06",
   "last_seen": "2026-10-06",
@@ -229,13 +412,14 @@
   "location": "",
   "career": "경력 무관 ",
   "deadline": "",
-  "url": "https://career.rememberapp.co.kr/job/posting/335630?postQuerySessionId=117247f5-a51a-4db9-897b-e634e4056d83&jdViewSource=inweb_list&channel=inweb_list&source=inweb_list&isHighlight=false",
+  "url": "https://career.rememberapp.co.kr/job/posting/335630?postQuerySessionId=ba0159b8-4954-4682-9299-5d27ae8794e7&jdViewSource=inweb_list&channel=inweb_list&source=inweb_list&isHighlight=false",
   "category": "AI 서비스 기획",
   "score": 65,
   "queries": [
    "AI PM",
    "AI PO",
    "AI 기획",
+   "AI 서비스 기획",
    "AI 인프라"
   ],
   "first_seen": "2026-10-05",
@@ -680,7 +864,7 @@
   "location": "",
   "career": "",
   "deadline": "",
-  "url": "https://career.rememberapp.co.kr/job/posting/344594?postQuerySessionId=117247f5-a51a-4db9-897b-e634e4056d83&jdViewSource=inweb_list&channel=inweb_list&source=inweb_list&isHighlight=false",
+  "url": "https://career.rememberapp.co.kr/job/posting/344594?postQuerySessionId=ba0159b8-4954-4682-9299-5d27ae8794e7&jdViewSource=inweb_list&channel=inweb_list&source=inweb_list&isHighlight=false",
   "category": "LLMOps/에이전트",
   "score": 85,
   "queries": [
@@ -1026,7 +1210,7 @@
   "location": "",
   "career": "경력3년↑ 09",
   "deadline": "",
-  "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50011662?Oem_Code=C1&logpath=1&stext=AI+PM&listno=11&sc=630",
+  "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50011662?Oem_Code=C1&logpath=1&stext=AI+PM&listno=12&sc=630",
   "category": "AI 서비스 기획",
   "score": 65,
   "queries": [
@@ -1044,7 +1228,7 @@
   "location": "",
   "career": "경력3년↑ 09",
   "deadline": "",
-  "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50071771?Oem_Code=C1&logpath=1&stext=AI+PM&listno=12&sc=630",
+  "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50071771?Oem_Code=C1&logpath=1&stext=AI+PM&listno=13&sc=630",
   "category": "AI 서비스 기획",
   "score": 65,
   "queries": [
@@ -1062,7 +1246,7 @@
   "location": "",
   "career": "경력 ",
   "deadline": "",
-  "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/49894357?Oem_Code=C1&logpath=1&stext=AI+PM&listno=14&sc=630",
+  "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/49894357?Oem_Code=C1&logpath=1&stext=AI+PM&listno=15&sc=630",
   "category": "AI 서비스 기획",
   "score": 65,
   "queries": [
@@ -1080,7 +1264,7 @@
   "location": "",
   "career": "경력1년↑ 09",
   "deadline": "",
-  "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50065807?Oem_Code=C1&logpath=1&stext=AI+PM&listno=17&sc=630",
+  "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50065807?Oem_Code=C1&logpath=1&stext=AI+PM&listno=18&sc=630",
   "category": "AI 서비스 기획",
   "score": 65,
   "queries": [
@@ -1231,7 +1415,7 @@
   "location": "",
   "career": "경력7년↑ ",
   "deadline": "",
-  "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50033820?Oem_Code=C1&logpath=1&stext=AI+%EA%B8%B0%ED%9A%8D&listno=3&sc=630",
+  "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50033820?Oem_Code=C1&logpath=1&stext=AI+%EA%B8%B0%ED%9A%8D&listno=18&sc=630",
   "category": "AI 서비스 기획",
   "score": 65,
   "queries": [
@@ -1249,7 +1433,7 @@
   "location": "",
   "career": "경력2년이상",
   "deadline": "",
-  "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50060165?Oem_Code=C1&logpath=1&stext=AI+%EA%B8%B0%ED%9A%8D&listno=16&sc=630",
+  "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50060165?Oem_Code=C1&logpath=1&stext=AI+%EA%B8%B0%ED%9A%8D&listno=19&sc=630",
   "category": "AI 서비스 기획",
   "score": 65,
   "queries": [
@@ -1321,7 +1505,7 @@
   "location": "",
   "career": "",
   "deadline": "",
-  "url": "https://career.rememberapp.co.kr/job/posting/344675?postQuerySessionId=117247f5-a51a-4db9-897b-e634e4056d83&jdViewSource=inweb_list&channel=inweb_list&source=inweb_list&isHighlight=false",
+  "url": "https://career.rememberapp.co.kr/job/posting/344675?postQuerySessionId=ba0159b8-4954-4682-9299-5d27ae8794e7&jdViewSource=inweb_list&channel=inweb_list&source=inweb_list&isHighlight=false",
   "category": "AI 서비스 기획",
   "score": 65,
   "queries": [
@@ -1343,7 +1527,7 @@
   "location": "",
   "career": "7년 이상",
   "deadline": "",
-  "url": "https://career.rememberapp.co.kr/job/posting/344581?postQuerySessionId=117247f5-a51a-4db9-897b-e634e4056d83&jdViewSource=inweb_list&channel=inweb_list&source=inweb_list&isHighlight=false",
+  "url": "https://career.rememberapp.co.kr/job/posting/344581?postQuerySessionId=ba0159b8-4954-4682-9299-5d27ae8794e7&jdViewSource=inweb_list&channel=inweb_list&source=inweb_list&isHighlight=false",
   "category": "AI 서비스 기획",
   "score": 65,
   "queries": [
@@ -1365,7 +1549,7 @@
   "location": "",
   "career": "",
   "deadline": "",
-  "url": "https://career.rememberapp.co.kr/job/posting/344234?postQuerySessionId=117247f5-a51a-4db9-897b-e634e4056d83&jdViewSource=inweb_list&channel=inweb_list&source=inweb_list&isHighlight=false",
+  "url": "https://career.rememberapp.co.kr/job/posting/344234?postQuerySessionId=ba0159b8-4954-4682-9299-5d27ae8794e7&jdViewSource=inweb_list&channel=inweb_list&source=inweb_list&isHighlight=false",
   "category": "AI 서비스 기획",
   "score": 65,
   "queries": [
@@ -1387,7 +1571,7 @@
   "location": "",
   "career": "",
   "deadline": "",
-  "url": "https://career.rememberapp.co.kr/job/posting/333277?postQuerySessionId=95ef9289-03bc-444e-ad47-f511b396ee22&jdViewSource=inweb_list&channel=inweb_list&source=inweb_list&isHighlight=false",
+  "url": "https://career.rememberapp.co.kr/job/posting/333277?postQuerySessionId=4db4cf42-b542-4fc4-9896-bf82d4cd36cc&jdViewSource=inweb_list&channel=inweb_list&source=inweb_list&isHighlight=false",
   "category": "AI 서비스 기획",
   "score": 65,
   "queries": [
@@ -1566,7 +1750,7 @@
   "location": "",
   "career": "4년 이상",
   "deadline": "",
-  "url": "https://career.rememberapp.co.kr/job/posting/344013?postQuerySessionId=117247f5-a51a-4db9-897b-e634e4056d83&jdViewSource=inweb_list&channel=inweb_list&source=inweb_list&isHighlight=false",
+  "url": "https://career.rememberapp.co.kr/job/posting/344013?postQuerySessionId=ba0159b8-4954-4682-9299-5d27ae8794e7&jdViewSource=inweb_list&channel=inweb_list&source=inweb_list&isHighlight=false",
   "category": "AI 서비스 기획",
   "score": 70,
   "queries": [
@@ -1838,7 +2022,7 @@
   "location": "",
   "career": "",
   "deadline": "D-10",
-  "url": "https://career.rememberapp.co.kr/job/posting/343858?postQuerySessionId=117247f5-a51a-4db9-897b-e634e4056d83&jdViewSource=inweb_list&channel=inweb_list&source=inweb_list&isHighlight=false",
+  "url": "https://career.rememberapp.co.kr/job/posting/343858?postQuerySessionId=ba0159b8-4954-4682-9299-5d27ae8794e7&jdViewSource=inweb_list&channel=inweb_list&source=inweb_list&isHighlight=false",
   "category": "AI 서비스 기획",
   "score": 65,
   "queries": [
@@ -1864,7 +2048,7 @@
   "location": "",
   "career": "8년 이상",
   "deadline": "D-5",
-  "url": "https://career.rememberapp.co.kr/job/posting/326952?postQuerySessionId=117247f5-a51a-4db9-897b-e634e4056d83&jdViewSource=inweb_list&channel=inweb_list&source=inweb_list&isHighlight=false",
+  "url": "https://career.rememberapp.co.kr/job/posting/326952?postQuerySessionId=ba0159b8-4954-4682-9299-5d27ae8794e7&jdViewSource=inweb_list&channel=inweb_list&source=inweb_list&isHighlight=false",
   "category": "AI 서비스 기획",
   "score": 65,
   "queries": [
@@ -1890,7 +2074,7 @@
   "location": "",
   "career": "",
   "deadline": "",
-  "url": "https://career.rememberapp.co.kr/job/posting/343813?postQuerySessionId=117247f5-a51a-4db9-897b-e634e4056d83&jdViewSource=inweb_list&channel=inweb_list&source=inweb_list&isHighlight=false",
+  "url": "https://career.rememberapp.co.kr/job/posting/343813?postQuerySessionId=ba0159b8-4954-4682-9299-5d27ae8794e7&jdViewSource=inweb_list&channel=inweb_list&source=inweb_list&isHighlight=false",
   "category": "AI 서비스 기획",
   "score": 65,
   "queries": [
