@@ -17,7 +17,10 @@ export type Job = {
   first_seen: string;
   last_seen: string;
   stale?: boolean;
+  has_detail?: boolean;
 };
+
+export type Detail = { id: string; text: string; fetched_at: string };
 
 export type SourceRun = {
   source: string;
@@ -74,4 +77,12 @@ export function todayKST() {
 
 export function daysAgoKST(n: number) {
   return new Date(Date.now() + 9 * 3600 * 1000 - n * 86400 * 1000).toISOString().slice(0, 10);
+}
+
+export function safeName(id: string) {
+  return id.replace(/[^A-Za-z0-9_-]/g, "_");
+}
+
+export function jobHref(id: string) {
+  return `/job/?id=${encodeURIComponent(id)}`;
 }

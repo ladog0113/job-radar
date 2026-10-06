@@ -1,7 +1,8 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { ExternalLink } from "lucide-react";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -30,6 +31,7 @@ import {
   daysAgoKST,
   todayKST,
   useJson,
+  jobHref,
   type Job,
   type Run,
 } from "@/lib/data";
@@ -44,6 +46,7 @@ const PERIODS: Record<string, number | null> = {
 const PAGE = 50;
 
 export default function JobsPage() {
+  const router = useRouter();
   const { data: jobs, loading, error } = useJson<Job[]>("jobs.json", []);
   const { data: runs } = useJson<Run[]>("runs.json", []);
 
@@ -186,7 +189,11 @@ export default function JobsPage() {
                   </TableRow>
                 ) : (
                   filtered.slice(0, limit).map((j) => (
-                    <TableRow key={j.id} className={j.stale ? "opacity-50" : undefined}>
+                    <TableRow
+                      key={j.id}
+                      onClick={() => router.push(jobHref(j.id))}
+                      className={`cursor-pointer ${j.stale ? "opacity-50" : ""}`}
+                    >
                       <TableCell className="whitespace-nowrap text-sm">
                         {j.first_seen.slice(5)}
                         {j.first_seen === today && (
@@ -199,15 +206,13 @@ export default function JobsPage() {
                         </Badge>
                       </TableCell>
                       <TableCell>
-                        <a
-                          href={j.url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="group inline-flex items-start gap-1 font-medium hover:underline"
+                        <Link
+                          href={jobHref(j.id)}
+                          onClick={(e) => e.stopPropagation()}
+                          className="font-medium hover:underline"
                         >
                           {j.title}
-                          <ExternalLink className="mt-1 size-3 shrink-0 opacity-0 group-hover:opacity-60" />
-                        </a>
+                        </Link>
                         <div className="text-sm text-muted-foreground">{j.company}</div>
                       </TableCell>
                       <TableCell className="whitespace-nowrap text-sm">

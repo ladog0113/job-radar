@@ -14,6 +14,7 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 from classify import classify
+from details import fetch_detail, safe_name
 from config import SEARCH_QUERIES, STALE_DAYS
 from sources import LABELS, SITES, crawl_linkedin, crawl_rendered, crawl_saramin, crawl_wanted
 
@@ -21,6 +22,8 @@ KST = timezone(timedelta(hours=9))
 DATA_DIR = Path(__file__).resolve().parent.parent / "public" / "data"
 JOBS_FILE = DATA_DIR / "jobs.json"
 RUNS_FILE = DATA_DIR / "runs.json"
+DETAIL_DIR = DATA_DIR / "details"
+MAX_DETAILS_PER_RUN = 60  # 하루에 새로 받아올 상세 본문 최대 개수
 
 ALL_SITES = ["wanted", "saramin", "jobkorea", "jobplanet", "jasoseol", "remember", "catch", "linkedin"]
 
@@ -40,7 +43,7 @@ def run(sites: list[str]) -> None:
 
     browser = None
     pw = None
-    if any(s in SITES for s in sites):
+    if True:  # 상세 본문 수집에도 브라우저가 필요
         from playwright.sync_api import sync_playwright
 
         pw = sync_playwright().start()
@@ -90,11 +93,37 @@ def run(sites: list[str]) -> None:
                 traceback.print_exc()
             print(f"[{site}] fetched={entry['fetched']} matched={entry['matched']} new={entry['new']} error={entry['error']}")
             run_log["sources"].append(entry)
+
+        # 상세 본문: 아직 없는 공고만, 최근 공고부터
+        DETAIL_DIR.mkdir(parents=True, exist_ok=True)
+        todo = [
+            j for j in sorted(jobs.values(), key=lambda j: j["first_seen"], reverse=True)
+            if not (DETAIL_DIR / f"{safe_name(j['id'])}.json").exists()
+        ][:MAX_DETAILS_PER_RUN]
+        got = 0
+        for j in todo:
+            try:
+                text = fetch_detail(j, browser)
+            except Exception as e:
+                print(f"  [detail] {j['id']} 실패: {e}")
+                continue
+            if len(text) < 50:
+                continue
+            (DETAIL_DIR / f"{safe_name(j['id'])}.json").write_text(
+                json.dumps({"id": j["id"], "text": text, "fetched_at": today}, ensure_ascii=False),
+                encoding="utf-8",
+            )
+            got += 1
+        run_log["details"] = {"tried": len(todo), "saved": got}
+        print(f"[details] tried={len(todo)} saved={got}")
     finally:
         if browser:
             browser.close()
         if pw:
             pw.stop()
+
+    for j in jobs.values():
+        j["has_detail"] = (DETAIL_DIR / f"{safe_name(j['id'])}.json").exists()
 
     stale_before = (now - timedelta(days=STALE_DAYS)).strftime("%Y-%m-%d")
     for j in jobs.values():

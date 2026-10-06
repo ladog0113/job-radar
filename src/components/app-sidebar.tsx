@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import { Activity, Briefcase, Radar } from "lucide-react";
+import { Activity, Briefcase, Radar, Settings } from "lucide-react";
 
 import { NavPages } from "./nav-pages";
 import {
@@ -16,6 +16,7 @@ import {
 const pages = [
   { name: "채용공고", url: "/", icon: Briefcase },
   { name: "수집 현황", url: "/sources", icon: Activity },
+  { name: "설정", url: "/settings", icon: Settings },
 ];
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
