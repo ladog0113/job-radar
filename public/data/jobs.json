@@ -7,7 +7,7 @@
   "location": "",
   "career": "",
   "deadline": "",
-  "url": "https://career.rememberapp.co.kr/job/posting/345106?postQuerySessionId=ba0159b8-4954-4682-9299-5d27ae8794e7&jdViewSource=inweb_list&channel=inweb_list&source=inweb_list&isHighlight=false",
+  "url": "https://career.rememberapp.co.kr/job/posting/345106?postQuerySessionId=b91226de-1dff-4bc2-a135-2059c5a9e0d6&jdViewSource=inweb_list&channel=inweb_list&source=inweb_list&isHighlight=false",
   "category": "AI 인프라/MLOps",
   "score": 105,
   "queries": [
@@ -19,6 +19,7 @@
   ],
   "first_seen": "2026-10-06",
   "last_seen": "2026-10-06",
+  "has_detail": true,
   "stale": false
  },
  {
@@ -37,6 +38,32 @@
   ],
   "first_seen": "2026-10-06",
   "last_seen": "2026-10-06",
+  "stale": false,
+  "has_detail": true
+ },
+ {
+  "id": "saramin:55212526",
+  "source": "saramin",
+  "title": "[정규직][경력] AI·AX PM(AI Agent 부문)",
+  "company": "(주)랩큐",
+  "location": "서울 영등포구",
+  "career": "경력8년↑",
+  "deadline": "~ 12/05(토)",
+  "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55212526",
+  "category": "LLMOps/에이전트",
+  "score": 85,
+  "queries": [
+   "AI PM",
+   "AI 기획",
+   "AI 서비스 기획",
+   "AI 인프라",
+   "AI 플랫폼",
+   "LLM 기획",
+   "에이전트 기획"
+  ],
+  "first_seen": "2026-10-06",
+  "last_seen": "2026-10-06",
+  "has_detail": true,
   "stale": false
  },
  {
@@ -55,6 +82,7 @@
   ],
   "first_seen": "2026-10-06",
   "last_seen": "2026-10-06",
+  "has_detail": true,
   "stale": false
  },
  {
@@ -73,7 +101,8 @@
   ],
   "first_seen": "2026-10-06",
   "last_seen": "2026-10-06",
-  "stale": false
+  "stale": false,
+  "has_detail": true
  },
  {
   "id": "saramin:55203077",
@@ -92,6 +121,7 @@
   ],
   "first_seen": "2026-10-06",
   "last_seen": "2026-10-06",
+  "has_detail": true,
   "stale": false
  },
  {
@@ -110,6 +140,7 @@
   ],
   "first_seen": "2026-10-06",
   "last_seen": "2026-10-06",
+  "has_detail": true,
   "stale": false
  },
  {
@@ -128,6 +159,7 @@
   ],
   "first_seen": "2026-10-06",
   "last_seen": "2026-10-06",
+  "has_detail": true,
   "stale": false
  },
  {
@@ -138,7 +170,7 @@
   "location": "",
   "career": "",
   "deadline": "",
-  "url": "https://career.rememberapp.co.kr/job/posting/344966?postQuerySessionId=a433b960-4599-4d3e-8610-89c763fe54aa&jdViewSource=inweb_list&channel=inweb_list&source=inweb_list&isHighlight=false",
+  "url": "https://career.rememberapp.co.kr/job/posting/344966?postQuerySessionId=b4c8c860-b280-48b5-b8df-a69b44c26443&jdViewSource=inweb_list&channel=inweb_list&source=inweb_list&isHighlight=false",
   "category": "AI 서비스 기획",
   "score": 65,
   "queries": [
@@ -146,6 +178,7 @@
   ],
   "first_seen": "2026-10-06",
   "last_seen": "2026-10-06",
+  "has_detail": true,
   "stale": false
  },
  {
@@ -164,6 +197,7 @@
   ],
   "first_seen": "2026-10-06",
   "last_seen": "2026-10-06",
+  "has_detail": true,
   "stale": false
  },
  {
@@ -186,6 +220,7 @@
   ],
   "first_seen": "2026-10-06",
   "last_seen": "2026-10-06",
+  "has_detail": true,
   "stale": false
  },
  {
@@ -208,6 +243,7 @@
   ],
   "first_seen": "2026-10-06",
   "last_seen": "2026-10-06",
+  "has_detail": true,
   "stale": false
  },
  {
@@ -227,6 +263,7 @@
   ],
   "first_seen": "2026-10-06",
   "last_seen": "2026-10-06",
+  "has_detail": true,
   "stale": false
  },
  {
@@ -246,6 +283,7 @@
   ],
   "first_seen": "2026-10-06",
   "last_seen": "2026-10-06",
+  "has_detail": true,
   "stale": false
  },
  {
@@ -266,6 +304,7 @@
   ],
   "first_seen": "2026-10-06",
   "last_seen": "2026-10-06",
+  "has_detail": true,
   "stale": false
  },
  {
@@ -285,6 +324,7 @@
   ],
   "first_seen": "2026-10-06",
   "last_seen": "2026-10-06",
+  "has_detail": true,
   "stale": false
  },
  {
@@ -295,7 +335,7 @@
   "location": "",
   "career": "3년 이상",
   "deadline": "",
-  "url": "https://career.rememberapp.co.kr/job/posting/345062?postQuerySessionId=ba0159b8-4954-4682-9299-5d27ae8794e7&jdViewSource=inweb_list&channel=inweb_list&source=inweb_list&isHighlight=false",
+  "url": "https://career.rememberapp.co.kr/job/posting/345062?postQuerySessionId=b91226de-1dff-4bc2-a135-2059c5a9e0d6&jdViewSource=inweb_list&channel=inweb_list&source=inweb_list&isHighlight=false",
   "category": "AI 서비스 기획",
   "score": 65,
   "queries": [
@@ -307,6 +347,7 @@
   ],
   "first_seen": "2026-10-06",
   "last_seen": "2026-10-06",
+  "has_detail": true,
   "stale": false
  },
  {
@@ -329,6 +370,7 @@
   ],
   "first_seen": "2026-10-05",
   "last_seen": "2026-10-06",
+  "has_detail": true,
   "stale": false
  },
  {
@@ -347,7 +389,8 @@
   ],
   "first_seen": "2026-10-05",
   "last_seen": "2026-10-05",
-  "stale": false
+  "stale": false,
+  "has_detail": true
  },
  {
   "id": "saramin:55200551",
@@ -365,7 +408,8 @@
   ],
   "first_seen": "2026-10-05",
   "last_seen": "2026-10-05",
-  "stale": false
+  "stale": false,
+  "has_detail": true
  },
  {
   "id": "saramin:55201273",
@@ -384,7 +428,8 @@
   ],
   "first_seen": "2026-10-05",
   "last_seen": "2026-10-05",
-  "stale": false
+  "stale": false,
+  "has_detail": true
  },
  {
   "id": "jobkorea:49965152",
@@ -402,7 +447,8 @@
   ],
   "first_seen": "2026-10-05",
   "last_seen": "2026-10-05",
-  "stale": false
+  "stale": false,
+  "has_detail": true
  },
  {
   "id": "remember:335630",
@@ -412,7 +458,7 @@
   "location": "",
   "career": "경력 무관 ",
   "deadline": "",
-  "url": "https://career.rememberapp.co.kr/job/posting/335630?postQuerySessionId=ba0159b8-4954-4682-9299-5d27ae8794e7&jdViewSource=inweb_list&channel=inweb_list&source=inweb_list&isHighlight=false",
+  "url": "https://career.rememberapp.co.kr/job/posting/335630?postQuerySessionId=b91226de-1dff-4bc2-a135-2059c5a9e0d6&jdViewSource=inweb_list&channel=inweb_list&source=inweb_list&isHighlight=false",
   "category": "AI 서비스 기획",
   "score": 65,
   "queries": [
@@ -424,6 +470,7 @@
   ],
   "first_seen": "2026-10-05",
   "last_seen": "2026-10-06",
+  "has_detail": true,
   "stale": false
  },
  {
@@ -448,6 +495,7 @@
   ],
   "first_seen": "2026-10-05",
   "last_seen": "2026-10-06",
+  "has_detail": true,
   "stale": false
  },
  {
@@ -467,6 +515,7 @@
   ],
   "first_seen": "2026-10-05",
   "last_seen": "2026-10-06",
+  "has_detail": true,
   "stale": false
  },
  {
@@ -486,7 +535,8 @@
   ],
   "first_seen": "2026-10-04",
   "last_seen": "2026-10-06",
-  "stale": false
+  "stale": false,
+  "has_detail": true
  },
  {
   "id": "saramin:55200161",
@@ -504,7 +554,8 @@
   ],
   "first_seen": "2026-10-04",
   "last_seen": "2026-10-05",
-  "stale": false
+  "stale": false,
+  "has_detail": true
  },
  {
   "id": "linkedin:4429359075",
@@ -528,6 +579,7 @@
   ],
   "first_seen": "2026-10-04",
   "last_seen": "2026-10-06",
+  "has_detail": true,
   "stale": false
  },
  {
@@ -546,7 +598,8 @@
   ],
   "first_seen": "2026-10-03",
   "last_seen": "2026-10-06",
-  "stale": false
+  "stale": false,
+  "has_detail": true
  },
  {
   "id": "saramin:55186436",
@@ -564,6 +617,7 @@
   ],
   "first_seen": "2026-10-03",
   "last_seen": "2026-10-06",
+  "has_detail": true,
   "stale": false
  },
  {
@@ -584,7 +638,8 @@
   ],
   "first_seen": "2026-10-03",
   "last_seen": "2026-10-05",
-  "stale": false
+  "stale": false,
+  "has_detail": true
  },
  {
   "id": "saramin:55197488",
@@ -603,7 +658,8 @@
   ],
   "first_seen": "2026-10-03",
   "last_seen": "2026-10-04",
-  "stale": false
+  "stale": false,
+  "has_detail": true
  },
  {
   "id": "saramin:55193899",
@@ -621,7 +677,8 @@
   ],
   "first_seen": "2026-10-03",
   "last_seen": "2026-10-05",
-  "stale": false
+  "stale": false,
+  "has_detail": true
  },
  {
   "id": "saramin:55193132",
@@ -639,7 +696,8 @@
   ],
   "first_seen": "2026-10-03",
   "last_seen": "2026-10-03",
-  "stale": false
+  "stale": false,
+  "has_detail": true
  },
  {
   "id": "jobkorea:50001722",
@@ -657,7 +715,8 @@
   ],
   "first_seen": "2026-10-03",
   "last_seen": "2026-10-05",
-  "stale": false
+  "stale": false,
+  "has_detail": true
  },
  {
   "id": "jobkorea:50080872",
@@ -675,7 +734,8 @@
   ],
   "first_seen": "2026-10-03",
   "last_seen": "2026-10-06",
-  "stale": false
+  "stale": false,
+  "has_detail": true
  },
  {
   "id": "jobkorea:49992254",
@@ -693,7 +753,8 @@
   ],
   "first_seen": "2026-10-03",
   "last_seen": "2026-10-05",
-  "stale": false
+  "stale": false,
+  "has_detail": true
  },
  {
   "id": "saramin:55179984",
@@ -712,7 +773,8 @@
   ],
   "first_seen": "2026-10-02",
   "last_seen": "2026-10-02",
-  "stale": false
+  "stale": false,
+  "has_detail": true
  },
  {
   "id": "wanted:382335",
@@ -732,7 +794,8 @@
   ],
   "first_seen": "2026-10-02",
   "last_seen": "2026-10-03",
-  "stale": false
+  "stale": false,
+  "has_detail": true
  },
  {
   "id": "wanted:387546",
@@ -750,7 +813,8 @@
   ],
   "first_seen": "2026-10-02",
   "last_seen": "2026-10-03",
-  "stale": false
+  "stale": false,
+  "has_detail": true
  },
  {
   "id": "jobkorea:50032305",
@@ -768,6 +832,7 @@
   ],
   "first_seen": "2026-10-02",
   "last_seen": "2026-10-06",
+  "has_detail": true,
   "stale": false
  },
  {
@@ -793,7 +858,8 @@
   ],
   "first_seen": "2026-10-02",
   "last_seen": "2026-10-05",
-  "stale": false
+  "stale": false,
+  "has_detail": true
  },
  {
   "id": "wanted:382982",
@@ -817,7 +883,8 @@
   ],
   "first_seen": "2026-10-02",
   "last_seen": "2026-10-03",
-  "stale": false
+  "stale": false,
+  "has_detail": true
  },
  {
   "id": "wanted:381139",
@@ -836,7 +903,8 @@
   ],
   "first_seen": "2026-10-02",
   "last_seen": "2026-10-03",
-  "stale": false
+  "stale": false,
+  "has_detail": true
  },
  {
   "id": "jobkorea:50043433",
@@ -854,7 +922,8 @@
   ],
   "first_seen": "2026-10-02",
   "last_seen": "2026-10-04",
-  "stale": false
+  "stale": false,
+  "has_detail": true
  },
  {
   "id": "remember:344594",
@@ -864,7 +933,7 @@
   "location": "",
   "career": "",
   "deadline": "",
-  "url": "https://career.rememberapp.co.kr/job/posting/344594?postQuerySessionId=ba0159b8-4954-4682-9299-5d27ae8794e7&jdViewSource=inweb_list&channel=inweb_list&source=inweb_list&isHighlight=false",
+  "url": "https://career.rememberapp.co.kr/job/posting/344594?postQuerySessionId=b91226de-1dff-4bc2-a135-2059c5a9e0d6&jdViewSource=inweb_list&channel=inweb_list&source=inweb_list&isHighlight=false",
   "category": "LLMOps/에이전트",
   "score": 85,
   "queries": [
@@ -877,6 +946,7 @@
   ],
   "first_seen": "2026-10-02",
   "last_seen": "2026-10-06",
+  "has_detail": true,
   "stale": false
  },
  {
@@ -897,7 +967,8 @@
   ],
   "first_seen": "2026-10-02",
   "last_seen": "2026-10-04",
-  "stale": false
+  "stale": false,
+  "has_detail": true
  },
  {
   "id": "jobkorea:50031305",
@@ -916,6 +987,7 @@
   ],
   "first_seen": "2026-10-02",
   "last_seen": "2026-10-06",
+  "has_detail": true,
   "stale": false
  },
  {
@@ -937,7 +1009,8 @@
   ],
   "first_seen": "2026-10-02",
   "last_seen": "2026-10-02",
-  "stale": false
+  "stale": false,
+  "has_detail": true
  },
  {
   "id": "saramin:55184787",
@@ -960,6 +1033,7 @@
   ],
   "first_seen": "2026-10-02",
   "last_seen": "2026-10-06",
+  "has_detail": true,
   "stale": false
  },
  {
@@ -978,7 +1052,8 @@
   ],
   "first_seen": "2026-10-02",
   "last_seen": "2026-10-02",
-  "stale": false
+  "stale": false,
+  "has_detail": true
  },
  {
   "id": "saramin:55181418",
@@ -998,6 +1073,7 @@
   ],
   "first_seen": "2026-10-02",
   "last_seen": "2026-10-06",
+  "has_detail": true,
   "stale": false
  },
  {
@@ -1017,6 +1093,7 @@
   ],
   "first_seen": "2026-10-02",
   "last_seen": "2026-10-06",
+  "has_detail": true,
   "stale": false
  },
  {
@@ -1038,6 +1115,7 @@
   ],
   "first_seen": "2026-10-02",
   "last_seen": "2026-10-06",
+  "has_detail": true,
   "stale": false
  },
  {
@@ -1059,6 +1137,7 @@
   ],
   "first_seen": "2026-10-02",
   "last_seen": "2026-10-06",
+  "has_detail": true,
   "stale": false
  },
  {
@@ -1078,7 +1157,8 @@
   ],
   "first_seen": "2026-10-02",
   "last_seen": "2026-10-02",
-  "stale": false
+  "stale": false,
+  "has_detail": true
  },
  {
   "id": "wanted:385208",
@@ -1101,7 +1181,8 @@
   ],
   "first_seen": "2026-10-02",
   "last_seen": "2026-10-03",
-  "stale": false
+  "stale": false,
+  "has_detail": true
  },
  {
   "id": "wanted:389428",
@@ -1120,7 +1201,8 @@
   ],
   "first_seen": "2026-10-02",
   "last_seen": "2026-10-03",
-  "stale": false
+  "stale": false,
+  "has_detail": true
  },
  {
   "id": "saramin:55191486",
@@ -1141,7 +1223,8 @@
   ],
   "first_seen": "2026-10-02",
   "last_seen": "2026-10-06",
-  "stale": false
+  "stale": false,
+  "has_detail": true
  },
  {
   "id": "saramin:55191337",
@@ -1160,7 +1243,8 @@
   ],
   "first_seen": "2026-10-02",
   "last_seen": "2026-10-02",
-  "stale": false
+  "stale": false,
+  "has_detail": true
  },
  {
   "id": "saramin:55190260",
@@ -1179,7 +1263,8 @@
   ],
   "first_seen": "2026-10-02",
   "last_seen": "2026-10-02",
-  "stale": false
+  "stale": false,
+  "has_detail": false
  },
  {
   "id": "saramin:55187787",
@@ -1200,6 +1285,7 @@
   ],
   "first_seen": "2026-10-02",
   "last_seen": "2026-10-06",
+  "has_detail": false,
   "stale": false
  },
  {
@@ -1218,6 +1304,7 @@
   ],
   "first_seen": "2026-10-02",
   "last_seen": "2026-10-06",
+  "has_detail": false,
   "stale": false
  },
  {
@@ -1236,6 +1323,7 @@
   ],
   "first_seen": "2026-10-02",
   "last_seen": "2026-10-06",
+  "has_detail": false,
   "stale": false
  },
  {
@@ -1254,6 +1342,7 @@
   ],
   "first_seen": "2026-10-02",
   "last_seen": "2026-10-06",
+  "has_detail": false,
   "stale": false
  },
  {
@@ -1272,6 +1361,7 @@
   ],
   "first_seen": "2026-10-02",
   "last_seen": "2026-10-06",
+  "has_detail": false,
   "stale": false
  },
  {
@@ -1290,6 +1380,7 @@
   ],
   "first_seen": "2026-10-02",
   "last_seen": "2026-10-06",
+  "has_detail": false,
   "stale": false
  },
  {
@@ -1309,6 +1400,7 @@
   ],
   "first_seen": "2026-10-02",
   "last_seen": "2026-10-06",
+  "has_detail": false,
   "stale": false
  },
  {
@@ -1327,6 +1419,7 @@
   ],
   "first_seen": "2026-10-02",
   "last_seen": "2026-10-06",
+  "has_detail": false,
   "stale": false
  },
  {
@@ -1346,6 +1439,7 @@
   ],
   "first_seen": "2026-10-02",
   "last_seen": "2026-10-06",
+  "has_detail": false,
   "stale": false
  },
  {
@@ -1366,6 +1460,7 @@
   ],
   "first_seen": "2026-10-02",
   "last_seen": "2026-10-06",
+  "has_detail": false,
   "stale": false
  },
  {
@@ -1386,6 +1481,7 @@
   ],
   "first_seen": "2026-10-02",
   "last_seen": "2026-10-06",
+  "has_detail": false,
   "stale": false
  },
  {
@@ -1405,6 +1501,7 @@
   ],
   "first_seen": "2026-10-02",
   "last_seen": "2026-10-06",
+  "has_detail": false,
   "stale": false
  },
  {
@@ -1415,7 +1512,7 @@
   "location": "",
   "career": "경력7년↑ ",
   "deadline": "",
-  "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50033820?Oem_Code=C1&logpath=1&stext=AI+%EA%B8%B0%ED%9A%8D&listno=18&sc=630",
+  "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50033820?Oem_Code=C1&logpath=1&stext=AI+%EA%B8%B0%ED%9A%8D&listno=3&sc=630",
   "category": "AI 서비스 기획",
   "score": 65,
   "queries": [
@@ -1423,6 +1520,7 @@
   ],
   "first_seen": "2026-10-02",
   "last_seen": "2026-10-06",
+  "has_detail": false,
   "stale": false
  },
  {
@@ -1441,6 +1539,7 @@
   ],
   "first_seen": "2026-10-02",
   "last_seen": "2026-10-06",
+  "has_detail": false,
   "stale": false
  },
  {
@@ -1451,7 +1550,7 @@
   "location": "",
   "career": "경력",
   "deadline": "",
-  "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/49965045?Oem_Code=C1&logpath=1&stext=AI+%EC%84%9C%EB%B9%84%EC%8A%A4+%EA%B8%B0%ED%9A%8D&listno=6&sc=630",
+  "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/49965045?Oem_Code=C1&logpath=1&stext=AI+%EC%84%9C%EB%B9%84%EC%8A%A4+%EA%B8%B0%ED%9A%8D&listno=5&sc=630",
   "category": "AI 서비스 기획",
   "score": 65,
   "queries": [
@@ -1459,6 +1558,7 @@
   ],
   "first_seen": "2026-10-02",
   "last_seen": "2026-10-06",
+  "has_detail": false,
   "stale": false
  },
  {
@@ -1477,6 +1577,7 @@
   ],
   "first_seen": "2026-10-02",
   "last_seen": "2026-10-06",
+  "has_detail": false,
   "stale": false
  },
  {
@@ -1495,6 +1596,7 @@
   ],
   "first_seen": "2026-10-02",
   "last_seen": "2026-10-06",
+  "has_detail": false,
   "stale": false
  },
  {
@@ -1505,7 +1607,7 @@
   "location": "",
   "career": "",
   "deadline": "",
-  "url": "https://career.rememberapp.co.kr/job/posting/344675?postQuerySessionId=ba0159b8-4954-4682-9299-5d27ae8794e7&jdViewSource=inweb_list&channel=inweb_list&source=inweb_list&isHighlight=false",
+  "url": "https://career.rememberapp.co.kr/job/posting/344675?postQuerySessionId=b91226de-1dff-4bc2-a135-2059c5a9e0d6&jdViewSource=inweb_list&channel=inweb_list&source=inweb_list&isHighlight=false",
   "category": "AI 서비스 기획",
   "score": 65,
   "queries": [
@@ -1517,6 +1619,7 @@
   ],
   "first_seen": "2026-10-02",
   "last_seen": "2026-10-06",
+  "has_detail": false,
   "stale": false
  },
  {
@@ -1527,7 +1630,7 @@
   "location": "",
   "career": "7년 이상",
   "deadline": "",
-  "url": "https://career.rememberapp.co.kr/job/posting/344581?postQuerySessionId=ba0159b8-4954-4682-9299-5d27ae8794e7&jdViewSource=inweb_list&channel=inweb_list&source=inweb_list&isHighlight=false",
+  "url": "https://career.rememberapp.co.kr/job/posting/344581?postQuerySessionId=b91226de-1dff-4bc2-a135-2059c5a9e0d6&jdViewSource=inweb_list&channel=inweb_list&source=inweb_list&isHighlight=false",
   "category": "AI 서비스 기획",
   "score": 65,
   "queries": [
@@ -1539,6 +1642,7 @@
   ],
   "first_seen": "2026-10-02",
   "last_seen": "2026-10-06",
+  "has_detail": false,
   "stale": false
  },
  {
@@ -1549,7 +1653,7 @@
   "location": "",
   "career": "",
   "deadline": "",
-  "url": "https://career.rememberapp.co.kr/job/posting/344234?postQuerySessionId=ba0159b8-4954-4682-9299-5d27ae8794e7&jdViewSource=inweb_list&channel=inweb_list&source=inweb_list&isHighlight=false",
+  "url": "https://career.rememberapp.co.kr/job/posting/344234?postQuerySessionId=b91226de-1dff-4bc2-a135-2059c5a9e0d6&jdViewSource=inweb_list&channel=inweb_list&source=inweb_list&isHighlight=false",
   "category": "AI 서비스 기획",
   "score": 65,
   "queries": [
@@ -1561,6 +1665,7 @@
   ],
   "first_seen": "2026-10-02",
   "last_seen": "2026-10-06",
+  "has_detail": false,
   "stale": false
  },
  {
@@ -1571,7 +1676,7 @@
   "location": "",
   "career": "",
   "deadline": "",
-  "url": "https://career.rememberapp.co.kr/job/posting/333277?postQuerySessionId=4db4cf42-b542-4fc4-9896-bf82d4cd36cc&jdViewSource=inweb_list&channel=inweb_list&source=inweb_list&isHighlight=false",
+  "url": "https://career.rememberapp.co.kr/job/posting/333277?postQuerySessionId=ec445055-6d1b-41f1-b843-0fb2ce173985&jdViewSource=inweb_list&channel=inweb_list&source=inweb_list&isHighlight=false",
   "category": "AI 서비스 기획",
   "score": 65,
   "queries": [
@@ -1579,6 +1684,7 @@
   ],
   "first_seen": "2026-10-02",
   "last_seen": "2026-10-06",
+  "has_detail": false,
   "stale": false
  },
  {
@@ -1602,6 +1708,7 @@
   ],
   "first_seen": "2026-10-02",
   "last_seen": "2026-10-06",
+  "has_detail": false,
   "stale": false
  },
  {
@@ -1621,7 +1728,8 @@
   ],
   "first_seen": "2026-10-01",
   "last_seen": "2026-10-01",
-  "stale": false
+  "stale": false,
+  "has_detail": false
  },
  {
   "id": "saramin:55157003",
@@ -1640,7 +1748,8 @@
   ],
   "first_seen": "2026-10-01",
   "last_seen": "2026-10-01",
-  "stale": false
+  "stale": false,
+  "has_detail": false
  },
  {
   "id": "saramin:55149313",
@@ -1660,7 +1769,8 @@
   ],
   "first_seen": "2026-10-01",
   "last_seen": "2026-10-02",
-  "stale": false
+  "stale": false,
+  "has_detail": false
  },
  {
   "id": "remember:342843",
@@ -1685,6 +1795,7 @@
   ],
   "first_seen": "2026-10-01",
   "last_seen": "2026-10-06",
+  "has_detail": false,
   "stale": false
  },
  {
@@ -1703,6 +1814,7 @@
   ],
   "first_seen": "2026-10-01",
   "last_seen": "2026-10-06",
+  "has_detail": false,
   "stale": false
  },
  {
@@ -1722,7 +1834,8 @@
   ],
   "first_seen": "2026-10-01",
   "last_seen": "2026-10-01",
-  "stale": false
+  "stale": false,
+  "has_detail": false
  },
  {
   "id": "saramin:55149538",
@@ -1740,7 +1853,8 @@
   ],
   "first_seen": "2026-10-01",
   "last_seen": "2026-10-01",
-  "stale": false
+  "stale": false,
+  "has_detail": false
  },
  {
   "id": "remember:344013",
@@ -1750,7 +1864,7 @@
   "location": "",
   "career": "4년 이상",
   "deadline": "",
-  "url": "https://career.rememberapp.co.kr/job/posting/344013?postQuerySessionId=ba0159b8-4954-4682-9299-5d27ae8794e7&jdViewSource=inweb_list&channel=inweb_list&source=inweb_list&isHighlight=false",
+  "url": "https://career.rememberapp.co.kr/job/posting/344013?postQuerySessionId=b91226de-1dff-4bc2-a135-2059c5a9e0d6&jdViewSource=inweb_list&channel=inweb_list&source=inweb_list&isHighlight=false",
   "category": "AI 서비스 기획",
   "score": 70,
   "queries": [
@@ -1764,6 +1878,7 @@
   ],
   "first_seen": "2026-10-01",
   "last_seen": "2026-10-06",
+  "has_detail": false,
   "stale": false
  },
  {
@@ -1784,7 +1899,8 @@
   ],
   "first_seen": "2026-10-01",
   "last_seen": "2026-10-01",
-  "stale": false
+  "stale": false,
+  "has_detail": false
  },
  {
   "id": "saramin:55147612",
@@ -1805,7 +1921,8 @@
   ],
   "first_seen": "2026-10-01",
   "last_seen": "2026-10-02",
-  "stale": false
+  "stale": false,
+  "has_detail": false
  },
  {
   "id": "saramin:55040212",
@@ -1823,6 +1940,7 @@
   ],
   "first_seen": "2026-10-01",
   "last_seen": "2026-10-06",
+  "has_detail": false,
   "stale": false
  },
  {
@@ -1841,7 +1959,8 @@
   ],
   "first_seen": "2026-10-01",
   "last_seen": "2026-10-06",
-  "stale": false
+  "stale": false,
+  "has_detail": false
  },
  {
   "id": "saramin:55162645",
@@ -1860,7 +1979,8 @@
   ],
   "first_seen": "2026-10-01",
   "last_seen": "2026-10-02",
-  "stale": false
+  "stale": false,
+  "has_detail": false
  },
  {
   "id": "saramin:55149934",
@@ -1878,7 +1998,8 @@
   ],
   "first_seen": "2026-10-01",
   "last_seen": "2026-10-01",
-  "stale": false
+  "stale": false,
+  "has_detail": false
  },
  {
   "id": "saramin:55165344",
@@ -1899,7 +2020,8 @@
   ],
   "first_seen": "2026-10-01",
   "last_seen": "2026-10-05",
-  "stale": false
+  "stale": false,
+  "has_detail": false
  },
  {
   "id": "saramin:55164978",
@@ -1918,7 +2040,8 @@
   ],
   "first_seen": "2026-10-01",
   "last_seen": "2026-10-01",
-  "stale": false
+  "stale": false,
+  "has_detail": false
  },
  {
   "id": "saramin:55151693",
@@ -1937,7 +2060,8 @@
   ],
   "first_seen": "2026-10-01",
   "last_seen": "2026-10-01",
-  "stale": false
+  "stale": false,
+  "has_detail": false
  },
  {
   "id": "saramin:55166047",
@@ -1956,7 +2080,8 @@
   ],
   "first_seen": "2026-10-01",
   "last_seen": "2026-10-01",
-  "stale": false
+  "stale": false,
+  "has_detail": false
  },
  {
   "id": "saramin:55165609",
@@ -1975,7 +2100,8 @@
   ],
   "first_seen": "2026-10-01",
   "last_seen": "2026-10-01",
-  "stale": false
+  "stale": false,
+  "has_detail": false
  },
  {
   "id": "saramin:55133078",
@@ -1993,7 +2119,8 @@
   ],
   "first_seen": "2026-10-01",
   "last_seen": "2026-10-01",
-  "stale": false
+  "stale": false,
+  "has_detail": false
  },
  {
   "id": "saramin:55162234",
@@ -2012,7 +2139,8 @@
   ],
   "first_seen": "2026-10-01",
   "last_seen": "2026-10-01",
-  "stale": false
+  "stale": false,
+  "has_detail": false
  },
  {
   "id": "remember:343858",
@@ -2022,7 +2150,7 @@
   "location": "",
   "career": "",
   "deadline": "D-10",
-  "url": "https://career.rememberapp.co.kr/job/posting/343858?postQuerySessionId=ba0159b8-4954-4682-9299-5d27ae8794e7&jdViewSource=inweb_list&channel=inweb_list&source=inweb_list&isHighlight=false",
+  "url": "https://career.rememberapp.co.kr/job/posting/343858?postQuerySessionId=b91226de-1dff-4bc2-a135-2059c5a9e0d6&jdViewSource=inweb_list&channel=inweb_list&source=inweb_list&isHighlight=false",
   "category": "AI 서비스 기획",
   "score": 65,
   "queries": [
@@ -2038,6 +2166,7 @@
   ],
   "first_seen": "2026-10-01",
   "last_seen": "2026-10-06",
+  "has_detail": false,
   "stale": false
  },
  {
@@ -2048,7 +2177,7 @@
   "location": "",
   "career": "8년 이상",
   "deadline": "D-5",
-  "url": "https://career.rememberapp.co.kr/job/posting/326952?postQuerySessionId=ba0159b8-4954-4682-9299-5d27ae8794e7&jdViewSource=inweb_list&channel=inweb_list&source=inweb_list&isHighlight=false",
+  "url": "https://career.rememberapp.co.kr/job/posting/326952?postQuerySessionId=b91226de-1dff-4bc2-a135-2059c5a9e0d6&jdViewSource=inweb_list&channel=inweb_list&source=inweb_list&isHighlight=false",
   "category": "AI 서비스 기획",
   "score": 65,
   "queries": [
@@ -2064,6 +2193,7 @@
   ],
   "first_seen": "2026-10-01",
   "last_seen": "2026-10-06",
+  "has_detail": false,
   "stale": false
  },
  {
@@ -2074,7 +2204,7 @@
   "location": "",
   "career": "",
   "deadline": "",
-  "url": "https://career.rememberapp.co.kr/job/posting/343813?postQuerySessionId=ba0159b8-4954-4682-9299-5d27ae8794e7&jdViewSource=inweb_list&channel=inweb_list&source=inweb_list&isHighlight=false",
+  "url": "https://career.rememberapp.co.kr/job/posting/343813?postQuerySessionId=b91226de-1dff-4bc2-a135-2059c5a9e0d6&jdViewSource=inweb_list&channel=inweb_list&source=inweb_list&isHighlight=false",
   "category": "AI 서비스 기획",
   "score": 65,
   "queries": [
@@ -2089,6 +2219,7 @@
   ],
   "first_seen": "2026-10-01",
   "last_seen": "2026-10-06",
+  "has_detail": false,
   "stale": false
  },
  {
@@ -2115,7 +2246,8 @@
   ],
   "first_seen": "2026-10-01",
   "last_seen": "2026-10-04",
-  "stale": false
+  "stale": false,
+  "has_detail": false
  },
  {
   "id": "remember:332656",
@@ -2140,7 +2272,8 @@
   ],
   "first_seen": "2026-10-01",
   "last_seen": "2026-10-05",
-  "stale": false
+  "stale": false,
+  "has_detail": false
  },
  {
   "id": "remember:325768",
@@ -2164,7 +2297,8 @@
   ],
   "first_seen": "2026-10-01",
   "last_seen": "2026-10-01",
-  "stale": false
+  "stale": false,
+  "has_detail": false
  },
  {
   "id": "remember:342939",
@@ -2187,7 +2321,8 @@
   ],
   "first_seen": "2026-10-01",
   "last_seen": "2026-10-01",
-  "stale": false
+  "stale": false,
+  "has_detail": false
  },
  {
   "id": "remember:342607",
@@ -2209,7 +2344,8 @@
   ],
   "first_seen": "2026-10-01",
   "last_seen": "2026-10-01",
-  "stale": false
+  "stale": false,
+  "has_detail": false
  },
  {
   "id": "remember:342859",
@@ -2231,7 +2367,8 @@
   ],
   "first_seen": "2026-10-01",
   "last_seen": "2026-10-01",
-  "stale": false
+  "stale": false,
+  "has_detail": false
  },
  {
   "id": "remember:342826",
@@ -2253,7 +2390,8 @@
   ],
   "first_seen": "2026-10-01",
   "last_seen": "2026-10-01",
-  "stale": false
+  "stale": false,
+  "has_detail": false
  },
  {
   "id": "remember:342720",
@@ -2275,7 +2413,8 @@
   ],
   "first_seen": "2026-10-01",
   "last_seen": "2026-10-05",
-  "stale": false
+  "stale": false,
+  "has_detail": false
  },
  {
   "id": "remember:334851",
@@ -2294,7 +2433,8 @@
   ],
   "first_seen": "2026-10-01",
   "last_seen": "2026-10-01",
-  "stale": false
+  "stale": false,
+  "has_detail": false
  },
  {
   "id": "linkedin:4404033447",
@@ -2314,6 +2454,7 @@
   ],
   "first_seen": "2026-10-01",
   "last_seen": "2026-10-05",
-  "stale": false
+  "stale": false,
+  "has_detail": false
  }
 ]
