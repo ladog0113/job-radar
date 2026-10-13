@@ -1150,5 +1150,79 @@
    "saved": 9
   },
   "finished_at": "2026-10-12T10:25:13+09:00"
+ },
+ {
+  "started_at": "2026-10-13T11:51:24+09:00",
+  "sources": [
+   {
+    "source": "wanted",
+    "label": "원티드",
+    "fetched": 0,
+    "matched": 0,
+    "new": 0,
+    "error": "0건 수집: 검색 주소나 링크 패턴이 바뀌었을 수 있음"
+   },
+   {
+    "source": "saramin",
+    "label": "사람인",
+    "fetched": 0,
+    "matched": 0,
+    "new": 0,
+    "error": "ConnectTimeout: HTTPSConnectionPool(host='www.saramin.co.kr', port=443): Max retries exceeded with url: /zf_user/search/recruit?searchword=MLOps&recruitSort=reg_dt&recruitPageCount=40 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.saramin.co.kr', port=443) at 0x7fe62cadc3b0>, 'Connection "
+   },
+   {
+    "source": "jobkorea",
+    "label": "잡코리아",
+    "fetched": 213,
+    "matched": 18,
+    "new": 1,
+    "error": null
+   },
+   {
+    "source": "jobplanet",
+    "label": "잡플래닛",
+    "fetched": 1,
+    "matched": 0,
+    "new": 0,
+    "error": null
+   },
+   {
+    "source": "jasoseol",
+    "label": "자소설닷컴",
+    "fetched": 19,
+    "matched": 0,
+    "new": 0,
+    "error": null
+   },
+   {
+    "source": "remember",
+    "label": "리멤버",
+    "fetched": 377,
+    "matched": 13,
+    "new": 0,
+    "error": null
+   },
+   {
+    "source": "catch",
+    "label": "캐치",
+    "fetched": 0,
+    "matched": 0,
+    "new": 0,
+    "error": "0건 수집: 검색 주소나 링크 패턴이 바뀌었을 수 있음"
+   },
+   {
+    "source": "linkedin",
+    "label": "링크드인",
+    "fetched": 53,
+    "matched": 2,
+    "new": 0,
+    "error": null
+   }
+  ],
+  "details": {
+   "tried": 7,
+   "saved": 1
+  },
+  "finished_at": "2026-10-13T12:14:12+09:00"
  }
 ]
