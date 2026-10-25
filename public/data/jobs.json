@@ -1,5 +1,203 @@
 [
  {
+  "id": "saramin:55385485",
+  "source": "saramin",
+  "title": "[코스닥-우주항공] IT 인프라 기획 및 운영팀장(세종)",
+  "company": "(주)스텝씨",
+  "location": "서울 강남구",
+  "career": "경력 10~15년",
+  "deadline": "~ 11/07(토)",
+  "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55385485",
+  "category": "AI 인프라/MLOps",
+  "score": 105,
+  "queries": [
+   "AI 기획",
+   "AI 인프라"
+  ],
+  "first_seen": "2026-10-25",
+  "last_seen": "2026-10-25",
+  "has_detail": true,
+  "stale": false
+ },
+ {
+  "id": "saramin:55383885",
+  "source": "saramin",
+  "title": "[국내 최고 대기업 계열] AI Agent 프로젝트 PM",
+  "company": "(주)스카우트",
+  "location": "서울 강남구",
+  "career": "경력 10~15년",
+  "deadline": "채용시",
+  "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55383885",
+  "category": "LLMOps/에이전트",
+  "score": 85,
+  "queries": [
+   "AI PM",
+   "AI 기획",
+   "LLM 기획",
+   "에이전트 기획"
+  ],
+  "first_seen": "2026-10-25",
+  "last_seen": "2026-10-25",
+  "has_detail": true,
+  "stale": false
+ },
+ {
+  "id": "saramin:55383709",
+  "source": "saramin",
+  "title": "AI 서비스 기획 경력(그룹사)",
+  "company": "HR컨설팅(주)",
+  "location": "서울 강남구",
+  "career": "경력 7~20년",
+  "deadline": "~ 11/08(일)",
+  "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55383709",
+  "category": "AI 서비스 기획",
+  "score": 65,
+  "queries": [
+   "AI 기획",
+   "AI 서비스 기획",
+   "AI 인프라",
+   "LLM 기획",
+   "에이전트 기획"
+  ],
+  "first_seen": "2026-10-25",
+  "last_seen": "2026-10-25",
+  "has_detail": true,
+  "stale": false
+ },
+ {
+  "id": "saramin:55385338",
+  "source": "saramin",
+  "title": "AI 캐릭터챗 서비스 운영·기획 (신입)",
+  "company": "새플리주식회사",
+  "location": "대구 남구",
+  "career": "경력무관",
+  "deadline": "~ 10/31(토)",
+  "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55385338",
+  "category": "AI 서비스 기획",
+  "score": 65,
+  "queries": [
+   "AI PM",
+   "AI PO",
+   "AI 기획",
+   "AI 서비스 기획",
+   "AI 플랫폼",
+   "프로덕트 매니저 AI"
+  ],
+  "first_seen": "2026-10-25",
+  "last_seen": "2026-10-25",
+  "has_detail": true,
+  "stale": false
+ },
+ {
+  "id": "saramin:55385312",
+  "source": "saramin",
+  "title": "업계 최고 수준 AI 기획 특기 AI-native Builder (PM·PO·BD)",
+  "company": "(주)도슨티",
+  "location": "서울 관악구",
+  "career": "경력무관",
+  "deadline": "~ 11/23(월)",
+  "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55385312",
+  "category": "AI 서비스 기획",
+  "score": 65,
+  "queries": [
+   "AI PM",
+   "AI PO",
+   "AI 기획",
+   "AI 서비스 기획",
+   "AI 플랫폼",
+   "LLM 기획",
+   "에이전트 기획",
+   "프로덕트 매니저 AI"
+  ],
+  "first_seen": "2026-10-25",
+  "last_seen": "2026-10-25",
+  "has_detail": true,
+  "stale": false
+ },
+ {
+  "id": "saramin:55384346",
+  "source": "saramin",
+  "title": "종로 위치 대기업 계열 반도체 소재회사 AI PM 과-차장급",
+  "company": "한스컨설팅",
+  "location": "서울 종로구",
+  "career": "경력 10~15년",
+  "deadline": "~ 11/08(일)",
+  "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55384346",
+  "category": "AI 서비스 기획",
+  "score": 65,
+  "queries": [
+   "AI PM"
+  ],
+  "first_seen": "2026-10-25",
+  "last_seen": "2026-10-25",
+  "has_detail": true,
+  "stale": false
+ },
+ {
+  "id": "saramin:55384146",
+  "source": "saramin",
+  "title": "[서울] AI서비스 기획및 사업 관리 계약직/정규직 모집",
+  "company": "(주)네피리티",
+  "location": "서울 서초구",
+  "career": "신입·경력",
+  "deadline": "~ 11/23(월)",
+  "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55384146",
+  "category": "AI 서비스 기획",
+  "score": 65,
+  "queries": [
+   "AI 기획",
+   "AI 서비스 기획"
+  ],
+  "first_seen": "2026-10-25",
+  "last_seen": "2026-10-25",
+  "has_detail": true,
+  "stale": false
+ },
+ {
+  "id": "jobkorea:50226555",
+  "source": "jobkorea",
+  "title": "AI 서비스 기획자(AX 설계/기획자)모집",
+  "company": "스크랩",
+  "location": "",
+  "career": "경력무관 10",
+  "deadline": "",
+  "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50226555?Oem_Code=C1&logpath=1&stext=AI+%EC%84%9C%EB%B9%84%EC%8A%A4+%EA%B8%B0%ED%9A%8D&listno=8&sc=630",
+  "category": "AI 서비스 기획",
+  "score": 65,
+  "queries": [
+   "AI 서비스 기획"
+  ],
+  "first_seen": "2026-10-25",
+  "last_seen": "2026-10-25",
+  "has_detail": true,
+  "stale": false
+ },
+ {
+  "id": "linkedin:4482373759",
+  "source": "linkedin",
+  "title": "Technical Product Owner (AI)",
+  "company": "Toss",
+  "location": "서울",
+  "career": "",
+  "deadline": "",
+  "url": "https://www.linkedin.com/jobs/view/4482373759/",
+  "category": "AI 서비스 기획",
+  "score": 65,
+  "queries": [
+   "AI infrastructure product manager",
+   "AI platform product manager",
+   "AI product manager",
+   "AI product owner",
+   "GPU product manager",
+   "LLMOps product manager",
+   "MLOps product manager"
+  ],
+  "first_seen": "2026-10-25",
+  "last_seen": "2026-10-25",
+  "has_detail": true,
+  "stale": false
+ },
+ {
   "id": "saramin:55368487",
   "source": "saramin",
   "title": "(주)클러쉬 GPU 운영총괄 PM / GPU 플랫폼 운영 팀원 채용",
@@ -15,7 +213,7 @@
    "MLOps"
   ],
   "first_seen": "2026-10-24",
-  "last_seen": "2026-10-24",
+  "last_seen": "2026-10-25",
   "has_detail": true,
   "stale": false
  },
@@ -38,7 +236,7 @@
    "에이전트 기획"
   ],
   "first_seen": "2026-10-24",
-  "last_seen": "2026-10-24",
+  "last_seen": "2026-10-25",
   "has_detail": true,
   "stale": false
  },
@@ -49,17 +247,18 @@
   "company": "한화시스템(주)_ICT",
   "location": "",
   "career": "5년 이상",
-  "deadline": "D-8",
-  "url": "https://career.rememberapp.co.kr/job/posting/349609?curationLocation=job_posting_tab&source=step_up_position&postQuerySessionId=2f3e0cbb-4a20-4888-bdf5-fd8d51c5764d&channel=step_up_position&jdViewSource=step_up_position",
+  "deadline": "D-7",
+  "url": "https://career.rememberapp.co.kr/job/posting/349609?curationLocation=job_posting_tab&source=step_up_position&postQuerySessionId=b0856af2-7a7a-48a9-af19-62fba5980919&channel=step_up_position&jdViewSource=step_up_position",
   "category": "AI 인프라/MLOps",
   "score": 105,
   "queries": [
+   "GPU",
    "LLM 기획",
    "Product Manager AI",
    "에이전트 기획"
   ],
   "first_seen": "2026-10-24",
-  "last_seen": "2026-10-24",
+  "last_seen": "2026-10-25",
   "has_detail": true,
   "stale": false
  },
@@ -81,7 +280,7 @@
    "에이전트 기획"
   ],
   "first_seen": "2026-10-24",
-  "last_seen": "2026-10-24",
+  "last_seen": "2026-10-25",
   "has_detail": true,
   "stale": false
  },
@@ -102,7 +301,7 @@
    "에이전트 기획"
   ],
   "first_seen": "2026-10-24",
-  "last_seen": "2026-10-24",
+  "last_seen": "2026-10-25",
   "has_detail": true,
   "stale": false
  },
@@ -124,7 +323,7 @@
    "GPU"
   ],
   "first_seen": "2026-10-24",
-  "last_seen": "2026-10-24",
+  "last_seen": "2026-10-25",
   "has_detail": true,
   "stale": false
  },
@@ -144,7 +343,7 @@
    "프로덕트 매니저 AI"
   ],
   "first_seen": "2026-10-24",
-  "last_seen": "2026-10-24",
+  "last_seen": "2026-10-25",
   "has_detail": true,
   "stale": false
  },
@@ -166,7 +365,7 @@
    "에이전트 기획"
   ],
   "first_seen": "2026-10-24",
-  "last_seen": "2026-10-24",
+  "last_seen": "2026-10-25",
   "has_detail": true,
   "stale": false
  },
@@ -187,7 +386,7 @@
    "LLM 기획"
   ],
   "first_seen": "2026-10-24",
-  "last_seen": "2026-10-24",
+  "last_seen": "2026-10-25",
   "has_detail": true,
   "stale": false
  },
@@ -208,7 +407,7 @@
    "에이전트 기획"
   ],
   "first_seen": "2026-10-24",
-  "last_seen": "2026-10-24",
+  "last_seen": "2026-10-25",
   "has_detail": true,
   "stale": false
  },
@@ -246,7 +445,7 @@
    "AI 서비스 기획"
   ],
   "first_seen": "2026-10-24",
-  "last_seen": "2026-10-24",
+  "last_seen": "2026-10-25",
   "has_detail": true,
   "stale": false
  },
@@ -266,7 +465,7 @@
    "에이전트 기획"
   ],
   "first_seen": "2026-10-24",
-  "last_seen": "2026-10-24",
+  "last_seen": "2026-10-25",
   "has_detail": true,
   "stale": false
  },
@@ -278,7 +477,7 @@
   "location": "",
   "career": "경력 3년 이상",
   "deadline": "상시채용",
-  "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50229970?Oem_Code=C1&logpath=1&stext=AI+PM&listno=4&sc=630",
+  "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50229970?Oem_Code=C1&logpath=1&stext=AI+PM&listno=5&sc=630",
   "category": "AI 서비스 기획",
   "score": 65,
   "queries": [
@@ -286,7 +485,7 @@
    "AI PO"
   ],
   "first_seen": "2026-10-24",
-  "last_seen": "2026-10-24",
+  "last_seen": "2026-10-25",
   "has_detail": true,
   "stale": false
  },
@@ -306,7 +505,7 @@
    "LLM 기획"
   ],
   "first_seen": "2026-10-23",
-  "last_seen": "2026-10-24",
+  "last_seen": "2026-10-25",
   "has_detail": true,
   "stale": false
  },
@@ -330,7 +529,7 @@
    "에이전트 기획"
   ],
   "first_seen": "2026-10-23",
-  "last_seen": "2026-10-24",
+  "last_seen": "2026-10-25",
   "has_detail": true,
   "stale": false
  },
@@ -470,7 +669,7 @@
    "AI PO"
   ],
   "first_seen": "2026-10-23",
-  "last_seen": "2026-10-24",
+  "last_seen": "2026-10-25",
   "has_detail": true,
   "stale": false
  },
@@ -482,14 +681,14 @@
   "location": "",
   "career": "경력",
   "deadline": "",
-  "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50221499?Oem_Code=C1&logpath=1&stext=AI+%EA%B8%B0%ED%9A%8D&listno=5&sc=630",
+  "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50221499?Oem_Code=C1&logpath=1&stext=AI+%EA%B8%B0%ED%9A%8D&listno=6&sc=630",
   "category": "AI 서비스 기획",
   "score": 65,
   "queries": [
    "AI 기획"
   ],
   "first_seen": "2026-10-23",
-  "last_seen": "2026-10-24",
+  "last_seen": "2026-10-25",
   "has_detail": true,
   "stale": false
  },
@@ -501,7 +700,7 @@
   "location": "",
   "career": "",
   "deadline": "",
-  "url": "https://career.rememberapp.co.kr/job/posting/349448?postQuerySessionId=3cff6ff8-bb8b-47a0-aafe-c0bbcebe1a2d&jdViewSource=inweb_list&channel=inweb_list&source=inweb_list&isHighlight=false",
+  "url": "https://career.rememberapp.co.kr/job/posting/349448?postQuerySessionId=73c25bb3-d3e2-4448-aa6f-faa143f1a2af&jdViewSource=inweb_list&channel=inweb_list&source=inweb_list&isHighlight=false",
   "category": "AI 서비스 기획",
   "score": 65,
   "queries": [
@@ -512,7 +711,7 @@
    "AI 인프라"
   ],
   "first_seen": "2026-10-23",
-  "last_seen": "2026-10-24",
+  "last_seen": "2026-10-25",
   "has_detail": true,
   "stale": false
  },
@@ -524,7 +723,7 @@
   "location": "",
   "career": "",
   "deadline": "",
-  "url": "https://career.rememberapp.co.kr/job/posting/349361?postQuerySessionId=3cff6ff8-bb8b-47a0-aafe-c0bbcebe1a2d&jdViewSource=inweb_list&channel=inweb_list&source=inweb_list&isHighlight=false",
+  "url": "https://career.rememberapp.co.kr/job/posting/349361?postQuerySessionId=73c25bb3-d3e2-4448-aa6f-faa143f1a2af&jdViewSource=inweb_list&channel=inweb_list&source=inweb_list&isHighlight=false",
   "category": "AI 서비스 기획",
   "score": 65,
   "queries": [
@@ -535,7 +734,7 @@
    "AI 인프라"
   ],
   "first_seen": "2026-10-23",
-  "last_seen": "2026-10-24",
+  "last_seen": "2026-10-25",
   "has_detail": true,
   "stale": false
  },
@@ -547,7 +746,7 @@
   "location": "",
   "career": "3년 이상",
   "deadline": "",
-  "url": "https://career.rememberapp.co.kr/job/posting/349458?postQuerySessionId=3cff6ff8-bb8b-47a0-aafe-c0bbcebe1a2d&jdViewSource=inweb_list&channel=inweb_list&source=inweb_list&isHighlight=false",
+  "url": "https://career.rememberapp.co.kr/job/posting/349458?postQuerySessionId=73c25bb3-d3e2-4448-aa6f-faa143f1a2af&jdViewSource=inweb_list&channel=inweb_list&source=inweb_list&isHighlight=false",
   "category": "AI 서비스 기획",
   "score": 65,
   "queries": [
@@ -558,7 +757,7 @@
    "AI 인프라"
   ],
   "first_seen": "2026-10-23",
-  "last_seen": "2026-10-24",
+  "last_seen": "2026-10-25",
   "has_detail": true,
   "stale": false
  },
@@ -570,7 +769,7 @@
   "location": "",
   "career": "7년 이상",
   "deadline": "",
-  "url": "https://career.rememberapp.co.kr/job/posting/349451?postQuerySessionId=3cff6ff8-bb8b-47a0-aafe-c0bbcebe1a2d&jdViewSource=inweb_list&channel=inweb_list&source=inweb_list&isHighlight=false",
+  "url": "https://career.rememberapp.co.kr/job/posting/349451?postQuerySessionId=73c25bb3-d3e2-4448-aa6f-faa143f1a2af&jdViewSource=inweb_list&channel=inweb_list&source=inweb_list&isHighlight=false",
   "category": "AI 서비스 기획",
   "score": 65,
   "queries": [
@@ -581,7 +780,7 @@
    "AI 인프라"
   ],
   "first_seen": "2026-10-23",
-  "last_seen": "2026-10-24",
+  "last_seen": "2026-10-25",
   "has_detail": true,
   "stale": false
  },
@@ -593,7 +792,7 @@
   "location": "",
   "career": "",
   "deadline": "",
-  "url": "https://career.rememberapp.co.kr/job/posting/349230?postQuerySessionId=3cff6ff8-bb8b-47a0-aafe-c0bbcebe1a2d&jdViewSource=inweb_list&channel=inweb_list&source=inweb_list&isHighlight=false",
+  "url": "https://career.rememberapp.co.kr/job/posting/349230?postQuerySessionId=73c25bb3-d3e2-4448-aa6f-faa143f1a2af&jdViewSource=inweb_list&channel=inweb_list&source=inweb_list&isHighlight=false",
   "category": "AI 서비스 기획",
   "score": 65,
   "queries": [
@@ -604,7 +803,7 @@
    "AI 인프라"
   ],
   "first_seen": "2026-10-23",
-  "last_seen": "2026-10-24",
+  "last_seen": "2026-10-25",
   "has_detail": true,
   "stale": false
  },
@@ -644,7 +843,7 @@
    "프로덕트 매니저 AI"
   ],
   "first_seen": "2026-10-22",
-  "last_seen": "2026-10-24",
+  "last_seen": "2026-10-25",
   "has_detail": true,
   "stale": false
  },
@@ -684,7 +883,7 @@
    "프로덕트 매니저 AI"
   ],
   "first_seen": "2026-10-22",
-  "last_seen": "2026-10-24",
+  "last_seen": "2026-10-25",
   "has_detail": true,
   "stale": false
  },
@@ -727,7 +926,7 @@
    "프로덕트 매니저 AI"
   ],
   "first_seen": "2026-10-22",
-  "last_seen": "2026-10-24",
+  "last_seen": "2026-10-25",
   "has_detail": true,
   "stale": false
  },
@@ -748,7 +947,7 @@
    "에이전트 기획"
   ],
   "first_seen": "2026-10-22",
-  "last_seen": "2026-10-24",
+  "last_seen": "2026-10-25",
   "has_detail": true,
   "stale": false
  },
@@ -769,7 +968,7 @@
    "프로덕트 매니저 AI"
   ],
   "first_seen": "2026-10-22",
-  "last_seen": "2026-10-24",
+  "last_seen": "2026-10-25",
   "has_detail": true,
   "stale": false
  },
@@ -789,7 +988,7 @@
    "에이전트 기획"
   ],
   "first_seen": "2026-10-22",
-  "last_seen": "2026-10-24",
+  "last_seen": "2026-10-25",
   "has_detail": true,
   "stale": false
  },
@@ -812,7 +1011,7 @@
    "프로덕트 매니저 AI"
   ],
   "first_seen": "2026-10-22",
-  "last_seen": "2026-10-24",
+  "last_seen": "2026-10-25",
   "has_detail": true,
   "stale": false
  },
@@ -921,14 +1120,14 @@
   "location": "",
   "career": "경력",
   "deadline": "",
-  "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50213268?Oem_Code=C1&logpath=1&stext=AI+PO&listno=1&sc=630",
+  "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50213268?Oem_Code=C1&logpath=1&stext=AI+PO&listno=4&sc=630",
   "category": "AI 서비스 기획",
   "score": 65,
   "queries": [
    "AI PO"
   ],
   "first_seen": "2026-10-22",
-  "last_seen": "2026-10-24",
+  "last_seen": "2026-10-25",
   "has_detail": true,
   "stale": false
  },
@@ -940,7 +1139,7 @@
   "location": "",
   "career": "",
   "deadline": "",
-  "url": "https://career.rememberapp.co.kr/job/posting/349066?postQuerySessionId=3cff6ff8-bb8b-47a0-aafe-c0bbcebe1a2d&jdViewSource=inweb_list&channel=inweb_list&source=inweb_list&isHighlight=false",
+  "url": "https://career.rememberapp.co.kr/job/posting/349066?postQuerySessionId=73c25bb3-d3e2-4448-aa6f-faa143f1a2af&jdViewSource=inweb_list&channel=inweb_list&source=inweb_list&isHighlight=false",
   "category": "AI 서비스 기획",
   "score": 65,
   "queries": [
@@ -951,7 +1150,7 @@
    "AI 인프라"
   ],
   "first_seen": "2026-10-22",
-  "last_seen": "2026-10-24",
+  "last_seen": "2026-10-25",
   "has_detail": true,
   "stale": false
  },
@@ -963,7 +1162,7 @@
   "location": "",
   "career": "경력 무관 ",
   "deadline": "",
-  "url": "https://career.rememberapp.co.kr/job/posting/348965?postQuerySessionId=3cff6ff8-bb8b-47a0-aafe-c0bbcebe1a2d&jdViewSource=inweb_list&channel=inweb_list&source=inweb_list&isHighlight=false",
+  "url": "https://career.rememberapp.co.kr/job/posting/348965?postQuerySessionId=73c25bb3-d3e2-4448-aa6f-faa143f1a2af&jdViewSource=inweb_list&channel=inweb_list&source=inweb_list&isHighlight=false",
   "category": "AI 서비스 기획",
   "score": 65,
   "queries": [
@@ -976,7 +1175,7 @@
    "프로덕트 매니저 AI"
   ],
   "first_seen": "2026-10-22",
-  "last_seen": "2026-10-24",
+  "last_seen": "2026-10-25",
   "has_detail": true,
   "stale": false
  },
@@ -1091,7 +1290,7 @@
   "location": "",
   "career": "",
   "deadline": "",
-  "url": "https://career.rememberapp.co.kr/job/posting/348661?postQuerySessionId=3cff6ff8-bb8b-47a0-aafe-c0bbcebe1a2d&jdViewSource=inweb_list&channel=inweb_list&source=inweb_list&isHighlight=false",
+  "url": "https://career.rememberapp.co.kr/job/posting/348661?postQuerySessionId=73c25bb3-d3e2-4448-aa6f-faa143f1a2af&jdViewSource=inweb_list&channel=inweb_list&source=inweb_list&isHighlight=false",
   "category": "AI 서비스 기획",
   "score": 70,
   "queries": [
@@ -1103,7 +1302,7 @@
    "Product Manager AI"
   ],
   "first_seen": "2026-10-21",
-  "last_seen": "2026-10-24",
+  "last_seen": "2026-10-25",
   "has_detail": true,
   "stale": false
  },
@@ -1115,7 +1314,7 @@
   "location": "",
   "career": "",
   "deadline": "",
-  "url": "https://career.rememberapp.co.kr/job/posting/348482?postQuerySessionId=3cff6ff8-bb8b-47a0-aafe-c0bbcebe1a2d&jdViewSource=inweb_list&channel=inweb_list&source=inweb_list&isHighlight=false",
+  "url": "https://career.rememberapp.co.kr/job/posting/348482?postQuerySessionId=73c25bb3-d3e2-4448-aa6f-faa143f1a2af&jdViewSource=inweb_list&channel=inweb_list&source=inweb_list&isHighlight=false",
   "category": "AI 서비스 기획",
   "score": 70,
   "queries": [
@@ -1127,7 +1326,7 @@
    "Product Manager AI"
   ],
   "first_seen": "2026-10-21",
-  "last_seen": "2026-10-24",
+  "last_seen": "2026-10-25",
   "has_detail": true,
   "stale": false
  },
@@ -1251,7 +1450,7 @@
    "프로덕트 매니저 AI"
   ],
   "first_seen": "2026-10-21",
-  "last_seen": "2026-10-24",
+  "last_seen": "2026-10-25",
   "has_detail": true,
   "stale": false
  },
@@ -1283,7 +1482,7 @@
   "location": "",
   "career": "경력",
   "deadline": "",
-  "url": "https://career.rememberapp.co.kr/job/posting/348758?postQuerySessionId=3cff6ff8-bb8b-47a0-aafe-c0bbcebe1a2d&jdViewSource=inweb_list&channel=inweb_list&source=inweb_list&isHighlight=false",
+  "url": "https://career.rememberapp.co.kr/job/posting/348758?postQuerySessionId=73c25bb3-d3e2-4448-aa6f-faa143f1a2af&jdViewSource=inweb_list&channel=inweb_list&source=inweb_list&isHighlight=false",
   "category": "AI 서비스 기획",
   "score": 65,
   "queries": [
@@ -1295,7 +1494,7 @@
    "Product Manager AI"
   ],
   "first_seen": "2026-10-21",
-  "last_seen": "2026-10-24",
+  "last_seen": "2026-10-25",
   "has_detail": true,
   "stale": false
  },
@@ -1307,7 +1506,7 @@
   "location": "",
   "career": "",
   "deadline": "",
-  "url": "https://career.rememberapp.co.kr/job/posting/348479?postQuerySessionId=3cff6ff8-bb8b-47a0-aafe-c0bbcebe1a2d&jdViewSource=inweb_list&channel=inweb_list&source=inweb_list&isHighlight=false",
+  "url": "https://career.rememberapp.co.kr/job/posting/348479?postQuerySessionId=73c25bb3-d3e2-4448-aa6f-faa143f1a2af&jdViewSource=inweb_list&channel=inweb_list&source=inweb_list&isHighlight=false",
   "category": "AI 서비스 기획",
   "score": 65,
   "queries": [
@@ -1319,7 +1518,7 @@
    "Product Manager AI"
   ],
   "first_seen": "2026-10-21",
-  "last_seen": "2026-10-24",
+  "last_seen": "2026-10-25",
   "has_detail": true,
   "stale": false
  },
@@ -1426,7 +1625,7 @@
    "MLOps product manager"
   ],
   "first_seen": "2026-10-20",
-  "last_seen": "2026-10-24",
+  "last_seen": "2026-10-25",
   "has_detail": true,
   "stale": false
  },
@@ -1704,7 +1903,7 @@
   "location": "",
   "career": "5년 이상",
   "deadline": "",
-  "url": "https://career.rememberapp.co.kr/job/posting/347847?postQuerySessionId=3cff6ff8-bb8b-47a0-aafe-c0bbcebe1a2d&jdViewSource=inweb_list&channel=inweb_list&source=inweb_list&isHighlight=false",
+  "url": "https://career.rememberapp.co.kr/job/posting/347847?postQuerySessionId=73c25bb3-d3e2-4448-aa6f-faa143f1a2af&jdViewSource=inweb_list&channel=inweb_list&source=inweb_list&isHighlight=false",
   "category": "AI 서비스 기획",
   "score": 70,
   "queries": [
@@ -1718,7 +1917,7 @@
    "에이전트 기획"
   ],
   "first_seen": "2026-10-17",
-  "last_seen": "2026-10-24",
+  "last_seen": "2026-10-25",
   "has_detail": true,
   "stale": false
  },
@@ -1923,7 +2122,7 @@
    "프로덕트 매니저 AI"
   ],
   "first_seen": "2026-10-16",
-  "last_seen": "2026-10-24",
+  "last_seen": "2026-10-25",
   "has_detail": true,
   "stale": false
  },
@@ -2071,8 +2270,8 @@
   "company": "(주)삼양홀딩스",
   "location": "",
   "career": "경력",
-  "deadline": "D-2",
-  "url": "https://career.rememberapp.co.kr/job/posting/319096?postQuerySessionId=3cff6ff8-bb8b-47a0-aafe-c0bbcebe1a2d&jdViewSource=inweb_list&channel=inweb_list&source=inweb_list&isHighlight=false",
+  "deadline": "D-1",
+  "url": "https://career.rememberapp.co.kr/job/posting/319096?postQuerySessionId=73c25bb3-d3e2-4448-aa6f-faa143f1a2af&jdViewSource=inweb_list&channel=inweb_list&source=inweb_list&isHighlight=false",
   "category": "AI 서비스 기획",
   "score": 65,
   "queries": [
@@ -2083,7 +2282,7 @@
    "AI 인프라"
   ],
   "first_seen": "2026-10-16",
-  "last_seen": "2026-10-24",
+  "last_seen": "2026-10-25",
   "has_detail": true,
   "stale": false
  },
@@ -2094,15 +2293,15 @@
   "company": "(주)엠씨엠코리아",
   "location": "",
   "career": "",
-  "deadline": "D-7",
-  "url": "https://career.rememberapp.co.kr/job/posting/347360?postQuerySessionId=25737446-2850-4f12-9d61-b97409483d7c&jdViewSource=inweb_list&channel=inweb_list&source=inweb_list&isHighlight=false",
+  "deadline": "D-6",
+  "url": "https://career.rememberapp.co.kr/job/posting/347360?postQuerySessionId=e21fbe8f-f0f3-4177-8676-6ef37163a8bd&jdViewSource=inweb_list&channel=inweb_list&source=inweb_list&isHighlight=false",
   "category": "AI 서비스 기획",
   "score": 65,
   "queries": [
    "AI PO"
   ],
   "first_seen": "2026-10-16",
-  "last_seen": "2026-10-24",
+  "last_seen": "2026-10-25",
   "has_detail": true,
   "stale": false
  },
@@ -2144,7 +2343,7 @@
    "프로덕트 매니저 AI"
   ],
   "first_seen": "2026-10-15",
-  "last_seen": "2026-10-24",
+  "last_seen": "2026-10-25",
   "has_detail": true,
   "stale": false
  },
@@ -2221,7 +2420,7 @@
    "AI 서비스 기획"
   ],
   "first_seen": "2026-10-15",
-  "last_seen": "2026-10-24",
+  "last_seen": "2026-10-25",
   "has_detail": true,
   "stale": false
  },
@@ -2320,7 +2519,7 @@
   "location": "",
   "career": "",
   "deadline": "",
-  "url": "https://career.rememberapp.co.kr/job/posting/346830?postQuerySessionId=bf73f422-7d60-4c1e-adef-bee6d4346b58&jdViewSource=inweb_list&channel=inweb_list&source=inweb_list&isHighlight=false",
+  "url": "https://career.rememberapp.co.kr/job/posting/346830?postQuerySessionId=6c310815-1b62-4286-b10c-c7f123254e9b&jdViewSource=inweb_list&channel=inweb_list&source=inweb_list&isHighlight=false",
   "category": "AI 인프라/MLOps",
   "score": 105,
   "queries": [
@@ -2332,7 +2531,7 @@
    "AI 플랫폼"
   ],
   "first_seen": "2026-10-14",
-  "last_seen": "2026-10-24",
+  "last_seen": "2026-10-25",
   "has_detail": true,
   "stale": false
  },
@@ -2401,7 +2600,7 @@
    "MLOps product manager"
   ],
   "first_seen": "2026-10-14",
-  "last_seen": "2026-10-24",
+  "last_seen": "2026-10-25",
   "has_detail": true,
   "stale": false
  },
@@ -2460,7 +2659,7 @@
    "에이전트 기획"
   ],
   "first_seen": "2026-10-14",
-  "last_seen": "2026-10-24",
+  "last_seen": "2026-10-25",
   "has_detail": true,
   "stale": false
  },
@@ -2648,7 +2847,7 @@
    "AI PM"
   ],
   "first_seen": "2026-10-13",
-  "last_seen": "2026-10-24",
+  "last_seen": "2026-10-25",
   "has_detail": true,
   "stale": false
  },
@@ -2667,7 +2866,7 @@
    "AI PM"
   ],
   "first_seen": "2026-10-12",
-  "last_seen": "2026-10-24",
+  "last_seen": "2026-10-25",
   "has_detail": true,
   "stale": false
  },
@@ -2903,7 +3102,7 @@
   "first_seen": "2026-10-10",
   "last_seen": "2026-10-10",
   "has_detail": true,
-  "stale": false
+  "stale": true
  },
  {
   "id": "saramin:55241291",
@@ -3011,7 +3210,7 @@
   "first_seen": "2026-10-10",
   "last_seen": "2026-10-10",
   "has_detail": true,
-  "stale": false
+  "stale": true
  },
  {
   "id": "saramin:55237861",
@@ -3112,7 +3311,7 @@
   "first_seen": "2026-10-09",
   "last_seen": "2026-10-10",
   "has_detail": true,
-  "stale": false
+  "stale": true
  },
  {
   "id": "saramin:55237369",
@@ -3367,7 +3566,7 @@
   "location": "",
   "career": "경력3년↑ 10",
   "deadline": "",
-  "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50127809?Oem_Code=C1&logpath=1&stext=AI+%EC%84%9C%EB%B9%84%EC%8A%A4+%EA%B8%B0%ED%9A%8D&listno=13&sc=630",
+  "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50127809?Oem_Code=C1&logpath=1&stext=AI+%EC%84%9C%EB%B9%84%EC%8A%A4+%EA%B8%B0%ED%9A%8D&listno=14&sc=630",
   "category": "AI 서비스 기획",
   "score": 70,
   "queries": [
@@ -3375,7 +3574,7 @@
    "LLM 기획"
   ],
   "first_seen": "2026-10-08",
-  "last_seen": "2026-10-24",
+  "last_seen": "2026-10-25",
   "has_detail": true,
   "stale": false
  },
@@ -3439,7 +3638,7 @@
   "first_seen": "2026-10-08",
   "last_seen": "2026-10-10",
   "has_detail": true,
-  "stale": false
+  "stale": true
  },
  {
   "id": "saramin:55228479",
@@ -3800,7 +3999,7 @@
    "AI PO"
   ],
   "first_seen": "2026-10-07",
-  "last_seen": "2026-10-24",
+  "last_seen": "2026-10-25",
   "has_detail": true,
   "stale": false
  },
@@ -4503,7 +4702,7 @@
   "first_seen": "2026-10-04",
   "last_seen": "2026-10-10",
   "has_detail": true,
-  "stale": false
+  "stale": true
  },
  {
   "id": "jobkorea:50011861",
@@ -4856,7 +5055,7 @@
   "location": "",
   "career": "",
   "deadline": "",
-  "url": "https://career.rememberapp.co.kr/job/posting/344594?postQuerySessionId=bf73f422-7d60-4c1e-adef-bee6d4346b58&jdViewSource=inweb_list&channel=inweb_list&source=inweb_list&isHighlight=false",
+  "url": "https://career.rememberapp.co.kr/job/posting/344594?postQuerySessionId=6c310815-1b62-4286-b10c-c7f123254e9b&jdViewSource=inweb_list&channel=inweb_list&source=inweb_list&isHighlight=false",
   "category": "LLMOps/에이전트",
   "score": 85,
   "queries": [
@@ -4869,7 +5068,7 @@
    "Product Manager AI"
   ],
   "first_seen": "2026-10-02",
-  "last_seen": "2026-10-24",
+  "last_seen": "2026-10-25",
   "has_detail": true,
   "stale": false
  },
@@ -5220,14 +5419,14 @@
   "location": "",
   "career": "경력3년↑ 09",
   "deadline": "",
-  "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50011662?Oem_Code=C1&logpath=1&stext=AI+PM&listno=15&sc=630",
+  "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50011662?Oem_Code=C1&logpath=1&stext=AI+PM&listno=16&sc=630",
   "category": "AI 서비스 기획",
   "score": 65,
   "queries": [
    "AI PM"
   ],
   "first_seen": "2026-10-02",
-  "last_seen": "2026-10-24",
+  "last_seen": "2026-10-25",
   "has_detail": true,
   "stale": false
  },
@@ -5239,14 +5438,14 @@
   "location": "",
   "career": "경력3년↑ 09",
   "deadline": "",
-  "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50071771?Oem_Code=C1&logpath=1&stext=AI+PM&listno=16&sc=630",
+  "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50071771?Oem_Code=C1&logpath=1&stext=AI+PM&listno=17&sc=630",
   "category": "AI 서비스 기획",
   "score": 65,
   "queries": [
    "AI PM"
   ],
   "first_seen": "2026-10-02",
-  "last_seen": "2026-10-24",
+  "last_seen": "2026-10-25",
   "has_detail": true,
   "stale": false
  },
@@ -5258,14 +5457,14 @@
   "location": "",
   "career": "경력 ",
   "deadline": "",
-  "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/49894357?Oem_Code=C1&logpath=1&stext=AI+PM&listno=18&sc=630",
+  "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/49894357?Oem_Code=C1&logpath=1&stext=AI+PM&listno=19&sc=630",
   "category": "AI 서비스 기획",
   "score": 65,
   "queries": [
    "AI PM"
   ],
   "first_seen": "2026-10-02",
-  "last_seen": "2026-10-24",
+  "last_seen": "2026-10-25",
   "has_detail": true,
   "stale": false
  },
@@ -5323,7 +5522,7 @@
    "프로덕트 매니저 AI"
   ],
   "first_seen": "2026-10-02",
-  "last_seen": "2026-10-24",
+  "last_seen": "2026-10-25",
   "has_detail": true,
   "stale": false
  },
@@ -5342,7 +5541,7 @@
    "AI PO"
   ],
   "first_seen": "2026-10-02",
-  "last_seen": "2026-10-24",
+  "last_seen": "2026-10-25",
   "has_detail": true,
   "stale": false
  },
@@ -5362,7 +5561,7 @@
    "AI 기획"
   ],
   "first_seen": "2026-10-02",
-  "last_seen": "2026-10-24",
+  "last_seen": "2026-10-25",
   "has_detail": true,
   "stale": false
  },
@@ -5383,7 +5582,7 @@
    "프로덕트 매니저 AI"
   ],
   "first_seen": "2026-10-02",
-  "last_seen": "2026-10-24",
+  "last_seen": "2026-10-25",
   "has_detail": true,
   "stale": false
  },
@@ -5404,7 +5603,7 @@
    "프로덕트 매니저 AI"
   ],
   "first_seen": "2026-10-02",
-  "last_seen": "2026-10-24",
+  "last_seen": "2026-10-25",
   "has_detail": true,
   "stale": false
  },
@@ -5500,7 +5699,7 @@
    "LLM 기획"
   ],
   "first_seen": "2026-10-02",
-  "last_seen": "2026-10-24",
+  "last_seen": "2026-10-25",
   "has_detail": true,
   "stale": false
  },
@@ -5707,7 +5906,7 @@
   "location": "",
   "career": "",
   "deadline": "",
-  "url": "https://career.rememberapp.co.kr/job/posting/342843?postQuerySessionId=bf73f422-7d60-4c1e-adef-bee6d4346b58&jdViewSource=inweb_list&channel=inweb_list&source=inweb_list&isHighlight=false",
+  "url": "https://career.rememberapp.co.kr/job/posting/342843?postQuerySessionId=6c310815-1b62-4286-b10c-c7f123254e9b&jdViewSource=inweb_list&channel=inweb_list&source=inweb_list&isHighlight=false",
   "category": "LLMOps/에이전트",
   "score": 85,
   "queries": [
@@ -5721,7 +5920,7 @@
    "프로덕트 매니저 AI"
   ],
   "first_seen": "2026-10-01",
-  "last_seen": "2026-10-24",
+  "last_seen": "2026-10-25",
   "has_detail": true,
   "stale": false
  },
@@ -5742,7 +5941,7 @@
   "first_seen": "2026-10-01",
   "last_seen": "2026-10-10",
   "has_detail": true,
-  "stale": false
+  "stale": true
  },
  {
   "id": "saramin:55163102",
@@ -6131,7 +6330,7 @@
   "location": "",
   "career": "",
   "deadline": "",
-  "url": "https://career.rememberapp.co.kr/job/posting/343813?postQuerySessionId=bf73f422-7d60-4c1e-adef-bee6d4346b58&jdViewSource=inweb_list&channel=inweb_list&source=inweb_list&isHighlight=false",
+  "url": "https://career.rememberapp.co.kr/job/posting/343813?postQuerySessionId=6c310815-1b62-4286-b10c-c7f123254e9b&jdViewSource=inweb_list&channel=inweb_list&source=inweb_list&isHighlight=false",
   "category": "AI 서비스 기획",
   "score": 65,
   "queries": [
@@ -6145,7 +6344,7 @@
    "프로덕트 매니저 AI"
   ],
   "first_seen": "2026-10-01",
-  "last_seen": "2026-10-24",
+  "last_seen": "2026-10-25",
   "has_detail": true,
   "stale": false
  },
@@ -6282,7 +6481,7 @@
   "location": "",
   "career": "경력 무관 ",
   "deadline": "",
-  "url": "https://career.rememberapp.co.kr/job/posting/342859?postQuerySessionId=3cff6ff8-bb8b-47a0-aafe-c0bbcebe1a2d&jdViewSource=inweb_list&channel=inweb_list&source=inweb_list&isHighlight=false",
+  "url": "https://career.rememberapp.co.kr/job/posting/342859?postQuerySessionId=73c25bb3-d3e2-4448-aa6f-faa143f1a2af&jdViewSource=inweb_list&channel=inweb_list&source=inweb_list&isHighlight=false",
   "category": "AI 서비스 기획",
   "score": 65,
   "queries": [
@@ -6295,7 +6494,7 @@
    "프로덕트 매니저 AI"
   ],
   "first_seen": "2026-10-01",
-  "last_seen": "2026-10-24",
+  "last_seen": "2026-10-25",
   "has_detail": true,
   "stale": false
  },
