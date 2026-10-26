@@ -39,6 +39,8 @@ export type Run = {
   started_at: string;
   finished_at?: string;
   sources: SourceRun[];
+  details?: { tried: number; saved: number };
+  jobplanet?: { looked?: number; found?: number; failed?: number; error?: string | null };
 };
 
 export const SOURCE_LABELS: Record<string, string> = {

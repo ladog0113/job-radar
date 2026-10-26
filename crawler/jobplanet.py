@@ -12,10 +12,9 @@ import time
 from datetime import datetime, timedelta
 from urllib.parse import quote
 
-import requests
 from bs4 import BeautifulSoup
 
-from sources import HEADERS
+from sources import UA
 
 BASE = "https://www.jobplanet.co.kr"
 REFRESH_DAYS = 14
@@ -41,10 +40,36 @@ def _num(pattern: str, text: str) -> float | None:
     return float(m.group(1)) if m else None
 
 
-def find_company(name: str) -> dict | None:
-    r = requests.get(f"{BASE}/search/companies?query={quote(name)}", headers=HEADERS, timeout=30)
-    r.raise_for_status()
-    soup = BeautifulSoup(r.text, "html.parser")
+class _Browser:
+    """잡플래닛은 일반 HTTP 요청을 막아서 브라우저(Playwright)로 연다"""
+
+    def __init__(self, browser):
+        self.page = browser.new_page(user_agent=UA, locale="ko-KR")
+
+    def html(self, url: str) -> str:
+        resp = self.page.goto(url, wait_until="domcontentloaded", timeout=30000)
+        if resp is not None and resp.status >= 400:
+            raise RuntimeError(f"HTTP {resp.status}")
+        try:
+            self.page.wait_for_load_state("networkidle", timeout=8000)
+        except Exception:
+            pass
+        return self.page.content()
+
+    def json(self, url: str):
+        # 현재 열린 잡플래닛 페이지 안에서 호출 (같은 출처, 쿠키 포함)
+        return self.page.evaluate(
+            "async (u) => { const r = await fetch(u, {headers: {Accept: 'application/json'}});"
+            " if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); }",
+            url,
+        )
+
+    def close(self):
+        self.page.close()
+
+
+def find_company(b: _Browser, name: str) -> dict | None:
+    soup = BeautifulSoup(b.html(f"{BASE}/search/companies?query={quote(name)}"), "html.parser")
     target = company_key(name)
     for a in soup.select('a[href*="/companies/"]'):
         h4 = a.find("h4")
@@ -63,10 +88,8 @@ def find_company(name: str) -> dict | None:
     return None
 
 
-def company_stats(jp_id: int) -> dict:
-    r = requests.get(f"{BASE}/companies/{jp_id}/reviews", headers=HEADERS, timeout=30)
-    r.raise_for_status()
-    text = re.sub(r"\s+", " ", BeautifulSoup(r.text, "html.parser").get_text(" "))
+def company_stats(b: _Browser, jp_id: int) -> dict:
+    text = re.sub(r"\s+", " ", BeautifulSoup(b.html(f"{BASE}/companies/{jp_id}/reviews"), "html.parser").get_text(" "))
     i = text.find("전체 리뷰 통계")
     text = text[i : i + 600] if i >= 0 else ""
     count = _num(r"전체 리뷰 통계\s*\((\d+)\s*명\)", text)
@@ -86,15 +109,11 @@ def company_stats(jp_id: int) -> dict:
     }
 
 
-def recent_reviews(jp_id: int) -> list[dict]:
-    r = requests.get(
-        f"{BASE}/api/v4/companies/reviews/list?device=desktop&company_id={jp_id}&page=1",
-        headers=HEADERS | {"Accept": "application/json", "Referer": f"{BASE}/companies/{jp_id}/reviews"},
-        timeout=30,
-    )
-    r.raise_for_status()
+def recent_reviews(b: _Browser, jp_id: int) -> list[dict]:
+    """company_stats 직후(리뷰 페이지가 열린 상태)에 호출"""
+    data = b.json(f"/api/v4/companies/reviews/list?device=desktop&company_id={jp_id}&page=1")
     out = []
-    for it in (r.json().get("data") or {}).get("items") or []:
+    for it in ((data or {}).get("data") or {}).get("items") or []:
         if it.get("type") != "COMPANY_REVIEW":
             continue
         rv = it.get("review") or {}
@@ -116,7 +135,7 @@ def recent_reviews(jp_id: int) -> list[dict]:
     return out
 
 
-def update_companies(jobs: list[dict], cache: dict, today: str) -> dict:
+def update_companies(jobs: list[dict], cache: dict, today: str, browser) -> dict:
     """jobs의 회사 중 캐시가 없거나 오래된 회사만 조회. job에 company_key를 넣는다."""
     fresh_after = (datetime.strptime(today, "%Y-%m-%d") - timedelta(days=REFRESH_DAYS)).strftime("%Y-%m-%d")
     todo: list[tuple[str, str]] = []
@@ -134,28 +153,34 @@ def update_companies(jobs: list[dict], cache: dict, today: str) -> dict:
         if cache.get(key, {}).get("fetched_at", "") < fresh_after:
             todo.append((key, name))
 
-    looked = found = 0
-    for key, name in todo[:MAX_LOOKUPS_PER_RUN]:
-        looked += 1
-        entry = {"fetched_at": today, "jp_id": None}
-        try:
-            hit = find_company(name)
-            if hit:
-                entry.update(hit)
-                entry["url"] = f"{BASE}/companies/{hit['jp_id']}/reviews"
-                try:
-                    entry.update(company_stats(hit["jp_id"]))
-                except Exception as e:
-                    print(f"  [jobplanet] 통계 실패 {name}: {e}")
-                try:
-                    entry["reviews"] = recent_reviews(hit["jp_id"])
-                except Exception as e:
-                    print(f"  [jobplanet] 리뷰 목록 실패 {name}: {e}")
-                found += 1
-        except Exception as e:
-            print(f"  [jobplanet] 검색 실패 {name}: {e}")
-            continue  # 일시 오류는 캐시하지 않고 다음 실행에서 재시도
-        cache[key] = entry
-        time.sleep(1.5)
-    print(f"[jobplanet] looked={looked} found={found} pending={max(0, len(todo) - looked)}")
-    return {"looked": looked, "found": found}
+    looked = found = failed = 0
+    last_error = None
+    b = _Browser(browser)
+    try:
+        for key, name in todo[:MAX_LOOKUPS_PER_RUN]:
+            looked += 1
+            entry = {"fetched_at": today, "jp_id": None}
+            try:
+                hit = find_company(b, name)
+                if hit:
+                    entry.update(hit)
+                    entry["url"] = f"{BASE}/companies/{hit['jp_id']}/reviews"
+                    try:
+                        entry.update(company_stats(b, hit["jp_id"]))
+                        entry["reviews"] = recent_reviews(b, hit["jp_id"])
+                    except Exception as e:
+                        print(f"  [jobplanet] 통계/리뷰 실패 {name}: {e}")
+                    found += 1
+            except Exception as e:
+                failed += 1
+                last_error = f"{type(e).__name__}: {str(e).splitlines()[0]}"[:200]
+                print(f"  [jobplanet] 검색 실패 {name}: {last_error}")
+                if failed >= 3 and found == 0:
+                    break  # 연속 실패면 이번 실행은 중단
+                continue  # 일시 오류는 캐시하지 않고 다음 실행에서 재시도
+            cache[key] = entry
+            time.sleep(1.5)
+    finally:
+        b.close()
+    print(f"[jobplanet] looked={looked} found={found} failed={failed} pending={max(0, len(todo) - looked)}")
+    return {"looked": looked, "found": found, "failed": failed, "error": last_error}

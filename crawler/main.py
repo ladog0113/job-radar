@@ -119,25 +119,25 @@ def run(sites: list[str]) -> None:
             got += 1
         run_log["details"] = {"tried": len(todo), "saved": got}
         print(f"[details] tried={len(todo)} saved={got}")
+        for j in jobs.values():
+            dpath = DETAIL_DIR / f"{safe_name(j['id'])}.json"
+            j["has_detail"] = dpath.exists()
+            detail_text = json.loads(dpath.read_text(encoding="utf-8"))["text"] if j["has_detail"] else ""
+            j.update(parse_career(j.get("career", ""), detail_text))
+
+        # 잡플래닛 기업 평점 (회사별 캐시)
+        companies = load(COMPANIES_FILE, {})
+        try:
+            run_log["jobplanet"] = update_companies(list(jobs.values()), companies, today, browser)
+        except Exception as e:
+            run_log["jobplanet"] = {"error": f"{type(e).__name__}: {e}"[:300]}
+            traceback.print_exc()
+
     finally:
         if browser:
             browser.close()
         if pw:
             pw.stop()
-
-    for j in jobs.values():
-        dpath = DETAIL_DIR / f"{safe_name(j['id'])}.json"
-        j["has_detail"] = dpath.exists()
-        detail_text = json.loads(dpath.read_text(encoding="utf-8"))["text"] if j["has_detail"] else ""
-        j.update(parse_career(j.get("career", ""), detail_text))
-
-    # 잡플래닛 기업 평점 (회사별 캐시)
-    companies = load(COMPANIES_FILE, {})
-    try:
-        run_log["jobplanet"] = update_companies(list(jobs.values()), companies, today)
-    except Exception as e:
-        run_log["jobplanet"] = {"error": f"{type(e).__name__}: {e}"[:300]}
-        traceback.print_exc()
 
     stale_before = (now - timedelta(days=STALE_DAYS)).strftime("%Y-%m-%d")
     for j in jobs.values():

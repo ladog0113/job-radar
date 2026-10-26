@@ -77,6 +77,21 @@ export default function SourcesPage() {
               })}
             </TableBody>
           </Table>
+          {last && (last.details || last.jobplanet) && (
+            <div className="mt-4 flex flex-col gap-1 text-sm text-muted-foreground">
+              {last.details && (
+                <div>
+                  공고 본문: 시도 {last.details.tried}건, 저장 {last.details.saved}건
+                </div>
+              )}
+              {last.jobplanet && (
+                <div className={last.jobplanet.error ? "text-destructive" : undefined}>
+                  잡플래닛 평점: 조회 {last.jobplanet.looked ?? 0}개 회사, 연결 {last.jobplanet.found ?? 0}개, 실패{" "}
+                  {last.jobplanet.failed ?? 0}개{last.jobplanet.error ? ` (${last.jobplanet.error})` : ""}
+                </div>
+              )}
+            </div>
+          )}
         </CardContent>
       </Card>
 
