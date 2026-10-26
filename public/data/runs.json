@@ -2264,5 +2264,85 @@
    "found": 0
   },
   "finished_at": "2026-10-26T21:50:41+09:00"
+ },
+ {
+  "started_at": "2026-10-26T22:21:27+09:00",
+  "sources": [
+   {
+    "source": "wanted",
+    "label": "원티드",
+    "fetched": 0,
+    "matched": 0,
+    "new": 0,
+    "error": "0건 수집: 검색 주소나 링크 패턴이 바뀌었을 수 있음"
+   },
+   {
+    "source": "saramin",
+    "label": "사람인",
+    "fetched": 354,
+    "matched": 22,
+    "new": 0,
+    "error": null
+   },
+   {
+    "source": "jobkorea",
+    "label": "잡코리아",
+    "fetched": 212,
+    "matched": 21,
+    "new": 0,
+    "error": null
+   },
+   {
+    "source": "jobplanet",
+    "label": "잡플래닛",
+    "fetched": 4,
+    "matched": 0,
+    "new": 0,
+    "error": null
+   },
+   {
+    "source": "jasoseol",
+    "label": "자소설닷컴",
+    "fetched": 20,
+    "matched": 0,
+    "new": 0,
+    "error": null
+   },
+   {
+    "source": "remember",
+    "label": "리멤버",
+    "fetched": 438,
+    "matched": 20,
+    "new": 0,
+    "error": null
+   },
+   {
+    "source": "catch",
+    "label": "캐치",
+    "fetched": 0,
+    "matched": 0,
+    "new": 0,
+    "error": "0건 수집: 검색 주소나 링크 패턴이 바뀌었을 수 있음"
+   },
+   {
+    "source": "linkedin",
+    "label": "링크드인",
+    "fetched": 73,
+    "matched": 4,
+    "new": 0,
+    "error": null
+   }
+  ],
+  "details": {
+   "tried": 0,
+   "saved": 0
+  },
+  "jobplanet": {
+   "looked": 40,
+   "found": 27,
+   "failed": 0,
+   "error": null
+  },
+  "finished_at": "2026-10-26T22:51:46+09:00"
  }
 ]
