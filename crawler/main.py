@@ -13,8 +13,10 @@ import traceback
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
+from career import parse_career
 from classify import classify
 from details import fetch_detail, safe_name
+from jobplanet import update_companies
 from config import SEARCH_QUERIES, STALE_DAYS
 from sources import LABELS, SITES, crawl_linkedin, crawl_rendered, crawl_saramin, crawl_wanted
 
@@ -22,6 +24,7 @@ KST = timezone(timedelta(hours=9))
 DATA_DIR = Path(__file__).resolve().parent.parent / "public" / "data"
 JOBS_FILE = DATA_DIR / "jobs.json"
 RUNS_FILE = DATA_DIR / "runs.json"
+COMPANIES_FILE = DATA_DIR / "companies.json"
 DETAIL_DIR = DATA_DIR / "details"
 MAX_DETAILS_PER_RUN = 60  # 하루에 새로 받아올 상세 본문 최대 개수
 
@@ -123,7 +126,18 @@ def run(sites: list[str]) -> None:
             pw.stop()
 
     for j in jobs.values():
-        j["has_detail"] = (DETAIL_DIR / f"{safe_name(j['id'])}.json").exists()
+        dpath = DETAIL_DIR / f"{safe_name(j['id'])}.json"
+        j["has_detail"] = dpath.exists()
+        detail_text = json.loads(dpath.read_text(encoding="utf-8"))["text"] if j["has_detail"] else ""
+        j.update(parse_career(j.get("career", ""), detail_text))
+
+    # 잡플래닛 기업 평점 (회사별 캐시)
+    companies = load(COMPANIES_FILE, {})
+    try:
+        run_log["jobplanet"] = update_companies(list(jobs.values()), companies, today)
+    except Exception as e:
+        run_log["jobplanet"] = {"error": f"{type(e).__name__}: {e}"[:300]}
+        traceback.print_exc()
 
     stale_before = (now - timedelta(days=STALE_DAYS)).strftime("%Y-%m-%d")
     for j in jobs.values():
@@ -136,6 +150,7 @@ def run(sites: list[str]) -> None:
     ordered = sorted(jobs.values(), key=lambda j: (j["first_seen"], j["score"]), reverse=True)
     JOBS_FILE.write_text(json.dumps(ordered, ensure_ascii=False, indent=1), encoding="utf-8")
     RUNS_FILE.write_text(json.dumps(runs, ensure_ascii=False, indent=1), encoding="utf-8")
+    COMPANIES_FILE.write_text(json.dumps(companies, ensure_ascii=False, indent=1), encoding="utf-8")
     print(f"total={len(ordered)} saved to {JOBS_FILE}")
 
 

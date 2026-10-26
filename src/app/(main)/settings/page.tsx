@@ -14,6 +14,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { listModels, loadSettings, saveSettings } from "@/lib/llm";
+import { careerLabel, loadCareerStart, saveCareerStart } from "@/lib/data";
 
 export default function SettingsPage() {
   const [apiKey, setApiKey] = useState("");
@@ -21,12 +22,14 @@ export default function SettingsPage() {
   const [models, setModels] = useState<{ id: string; display_name?: string }[]>([]);
   const [status, setStatus] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
+  const [careerStart, setCareerStart] = useState("");
 
   useEffect(() => {
     const s = loadSettings();
     setApiKey(s.apiKey);
     setModel(s.model);
     if (s.model) setModels([{ id: s.model }]);
+    setCareerStart(loadCareerStart());
   }, []);
 
   async function fetchModels() {
@@ -53,6 +56,28 @@ export default function SettingsPage() {
   }
 
   return (
+    <div className="flex flex-col gap-4">
+    <Card className="max-w-xl">
+      <CardHeader>
+        <CardTitle className="text-base">내 경력</CardTitle>
+      </CardHeader>
+      <CardContent className="flex flex-col gap-2">
+        <Label htmlFor="start">경력 시작일</Label>
+        <div className="flex items-center gap-3">
+          <Input
+            id="start"
+            type="date"
+            className="w-[180px]"
+            value={careerStart}
+            onChange={(e) => {
+              setCareerStart(e.target.value);
+              if (e.target.value) saveCareerStart(e.target.value);
+            }}
+          />
+          {careerStart && <span className="text-sm text-muted-foreground">오늘 기준 {careerLabel(careerStart)}</span>}
+        </div>
+      </CardContent>
+    </Card>
     <Card className="max-w-xl">
       <CardHeader>
         <CardTitle className="text-base">Anthropic API</CardTitle>
@@ -98,5 +123,6 @@ export default function SettingsPage() {
         </div>
       </CardContent>
     </Card>
+    </div>
   );
 }

@@ -24,7 +24,21 @@ import {
   type Review,
   type Rewrite,
 } from "@/lib/career";
-import { SOURCE_LABELS, safeName, useJson, type Detail, type Job } from "@/lib/data";
+import {
+  SOURCE_LABELS,
+  FIT_LABEL,
+  careerFit,
+  careerLabel,
+  careerYears,
+  loadCareerStart,
+  requiredText,
+  safeName,
+  useJson,
+  DEFAULT_CAREER_START,
+  type Company,
+  type Detail,
+  type Job,
+} from "@/lib/data";
 import { loadLocal, loadSettings, saveLocal, type Settings } from "@/lib/llm";
 
 export default function JobPage() {
@@ -42,6 +56,7 @@ function JobDetail() {
   const key = safeName(id);
   const { data: jobs, loading } = useJson<Job[]>("jobs.json", []);
   const job = useMemo(() => jobs.find((j) => j.id === id), [jobs, id]);
+  const { data: companies } = useJson<Record<string, Company>>("companies.json", {});
 
   const [settings, setSettings] = useState<Settings>({ apiKey: "", model: "" });
   const [crawled, setCrawled] = useState<string | null>(null);
@@ -54,9 +69,12 @@ function JobDetail() {
   const [busy, setBusy] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [tab, setTab] = useState("posting");
+  const [careerStart, setCareerStart] = useState(DEFAULT_CAREER_START);
+  const myCareer = careerLabel(careerStart);
 
   useEffect(() => {
     setSettings(loadSettings());
+    setCareerStart(loadCareerStart());
     setResume(loadLocal<string>("jr_resume") ?? "");
     setPasted(loadLocal<string>(`jr_post_${key}`) ?? "");
     setChecklist(loadLocal<Checklist>(`jr_cl_${key}`));
@@ -89,14 +107,6 @@ function JobDetail() {
     }
   }
 
-  async function ensureChecklist() {
-    if (checklist) return checklist;
-    const cl = await makeChecklist(settings, job?.title ?? "", job?.company ?? "", posting);
-    setChecklist(cl);
-    saveLocal(`jr_cl_${key}`, cl);
-    return cl;
-  }
-
   const onChecklist = () =>
     run("checklist", async () => {
       const cl = await makeChecklist(settings, job?.title ?? "", job?.company ?? "", posting);
@@ -108,8 +118,8 @@ function JobDetail() {
 
   const onReview = (text = resume) =>
     run("review", async () => {
-      const cl = await ensureChecklist();
-      const rv = await reviewResume(settings, posting, cl, text);
+      if (!checklist) throw new Error("공고 체크리스트가 아직 없습니다");
+      const rv = await reviewResume(settings, posting, checklist, text, myCareer);
       setReview(rv);
       saveLocal(`jr_rv_${key}`, rv);
       return rv;
@@ -117,17 +127,28 @@ function JobDetail() {
 
   const onRewrite = () =>
     run("rewrite", async () => {
-      const cl = await ensureChecklist();
+      if (!checklist) throw new Error("공고 체크리스트가 아직 없습니다");
+      const cl = checklist;
       let rv = review;
       if (!rv) {
-        rv = await reviewResume(settings, posting, cl, resume);
+        rv = await reviewResume(settings, posting, cl, resume, myCareer);
         setReview(rv);
         saveLocal(`jr_rv_${key}`, rv);
       }
-      const rw = await rewriteResume(settings, posting, cl, rv, resume);
+      const rw = await rewriteResume(settings, posting, cl, rv, resume, myCareer);
       setRewrite(rw);
       saveLocal(`jr_rw_${key}`, rw);
     });
+
+  // 공고 본문이 있으면 상세 페이지를 여는 즉시 체크리스트를 만든다 (공고 기준, 경력기술서와 무관)
+  const autoTried = useRef<string | null>(null);
+  useEffect(() => {
+    if (!ready || !posting || checklist || busy || !crawledLoaded) return;
+    if (autoTried.current === key) return;
+    autoTried.current = key;
+    onChecklist();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [ready, posting, checklist, busy, crawledLoaded, key]);
 
   function updateResume(text: string) {
     setResume(text);
@@ -152,6 +173,10 @@ function JobDetail() {
             <Badge variant="secondary">{job.category}</Badge>
             <Badge variant="outline">{SOURCE_LABELS[job.source] ?? job.source}</Badge>
             {job.stale && <Badge variant="outline">마감 추정</Badge>}
+            <Badge variant="outline">
+              연차 {FIT_LABEL[careerFit(job, careerYears(careerStart))]}
+              {requiredText(job) ? ` (요구 ${requiredText(job)}, 내 경력 ${myCareer})` : ` (내 경력 ${myCareer})`}
+            </Badge>
           </div>
           <CardTitle className="text-xl leading-snug">{job.title}</CardTitle>
           <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-sm text-muted-foreground">
@@ -166,6 +191,8 @@ function JobDetail() {
           </div>
         </CardHeader>
       </Card>
+
+      {job.company_key && companies[job.company_key] && <CompanyCard c={companies[job.company_key]} />}
 
       {!ready && (
         <Card>
@@ -254,6 +281,25 @@ function JobDetail() {
         </TabsContent>
 
         <TabsContent value="review" className="flex flex-col gap-4">
+          <Card>
+            <CardContent className="flex flex-wrap items-center justify-between gap-2 py-4 text-sm">
+              {checklist ? (
+                <span>
+                  대조 기준: 공고 체크리스트 {checklist.items.length}개 항목 (필수{" "}
+                  {checklist.items.filter((i) => i.group === "필수").length}, 우대{" "}
+                  {checklist.items.filter((i) => i.group === "우대").length}, 역량{" "}
+                  {checklist.items.filter((i) => i.group === "역량").length})
+                </span>
+              ) : busy === "checklist" ? (
+                <span className="text-muted-foreground">공고에서 체크리스트를 만드는 중</span>
+              ) : (
+                <span className="text-muted-foreground">공고 체크리스트가 없습니다</span>
+              )}
+              <Button size="sm" variant="outline" onClick={() => setTab("checklist")}>
+                체크리스트 보기
+              </Button>
+            </CardContent>
+          </Card>
           <ResumeInput
             resume={resume}
             onChange={updateResume}
@@ -262,7 +308,7 @@ function JobDetail() {
             disabled={busy !== null}
           />
           <div>
-            <Button onClick={() => onReview()} disabled={!ready || !posting || !resume.trim() || busy !== null}>
+            <Button onClick={() => onReview()} disabled={!ready || !checklist || !resume.trim() || busy !== null}>
               {busy === "review" ? "진단 중" : review ? "다시 진단" : "진단하기"}
             </Button>
           </div>
@@ -271,7 +317,7 @@ function JobDetail() {
 
         <TabsContent value="rewrite" className="flex flex-col gap-4">
           <div className="flex flex-wrap gap-2">
-            <Button onClick={onRewrite} disabled={!ready || !posting || !resume.trim() || busy !== null}>
+            <Button onClick={onRewrite} disabled={!ready || !checklist || !resume.trim() || busy !== null}>
               {busy === "rewrite" ? "작성 중" : rewrite ? "다시 작성" : "수정본 작성"}
             </Button>
             {rewrite && (
@@ -513,5 +559,99 @@ function ReviewResult({ review, checklist }: { review: Review; checklist: Checkl
         </CardContent>
       </Card>
     </div>
+  );
+}
+
+const SCORE_COLS: [keyof import("@/lib/data").JpReview, string][] = [
+  ["overall", "총점"],
+  ["worklife", "워라밸"],
+  ["compensation", "복지/급여"],
+  ["culture", "사내문화"],
+  ["advancement", "승진"],
+  ["management", "경영진"],
+];
+
+function CompanyCard({ c }: { c: Company }) {
+  if (!c.jp_id) {
+    return (
+      <Card>
+        <CardContent className="py-4 text-sm text-muted-foreground">
+          잡플래닛에서 같은 이름의 회사를 찾지 못했습니다 ({c.fetched_at} 조회)
+        </CardContent>
+      </Card>
+    );
+  }
+  const stats: [string, string][] = [
+    ["리뷰", c.review_count != null ? `${c.review_count}건` : "-"],
+    ["기업 추천율", c.recommend_pct != null ? `${c.recommend_pct}%` : "-"],
+    ["CEO 지지율", c.ceo_pct != null ? `${c.ceo_pct}%` : "-"],
+    ["성장 가능성", c.growth_pct != null ? `${c.growth_pct}%` : "-"],
+  ];
+  const rating = c.overall ?? c.rating;
+  return (
+    <Card>
+      <CardHeader className="flex-row items-center justify-between gap-2 space-y-0">
+        <CardTitle className="text-base">잡플래닛 {c.jp_name}</CardTitle>
+        {c.url && (
+          <a href={c.url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-sm text-muted-foreground hover:underline">
+            리뷰 원문 <ExternalLink className="size-3" />
+          </a>
+        )}
+      </CardHeader>
+      <CardContent className="flex flex-col gap-4 text-sm">
+        <div className="grid grid-cols-2 gap-4 sm:grid-cols-5">
+          <div>
+            <div className="text-xs text-muted-foreground">평점</div>
+            <div className="text-2xl font-semibold">{rating != null ? rating.toFixed(1) : "-"}</div>
+          </div>
+          {stats.map(([k, v]) => (
+            <div key={k}>
+              <div className="text-xs text-muted-foreground">{k}</div>
+              <div className="text-lg font-semibold">{v}</div>
+            </div>
+          ))}
+        </div>
+        {c.scores && (
+          <div className="grid grid-cols-2 gap-x-6 gap-y-1 sm:grid-cols-5">
+            {Object.entries(c.scores).map(([k, v]) => (
+              <div key={k} className="flex justify-between gap-2 border-b py-1">
+                <span className="text-muted-foreground">{k}</span>
+                <span>{v != null ? v.toFixed(1) : "-"}</span>
+              </div>
+            ))}
+          </div>
+        )}
+        {c.reviews && c.reviews.length > 0 && (
+          <div className="overflow-x-auto">
+            <div className="mb-1 text-xs text-muted-foreground">최근 리뷰 점수 (리뷰 본문은 잡플래닛 로그인 사용자에게만 공개)</div>
+            <Table>
+              <TableHeader>
+                <TableRow>
+                  <TableHead>작성</TableHead>
+                  <TableHead>직군</TableHead>
+                  {SCORE_COLS.map(([, label]) => (
+                    <TableHead key={label} className="text-right">{label}</TableHead>
+                  ))}
+                  <TableHead className="text-right">추천</TableHead>
+                </TableRow>
+              </TableHeader>
+              <TableBody>
+                {c.reviews.map((r, i) => (
+                  <TableRow key={i}>
+                    <TableCell className="whitespace-nowrap">{r.date}</TableCell>
+                    <TableCell>{[r.occupation, r.status].filter(Boolean).join(" / ")}</TableCell>
+                    {SCORE_COLS.map(([key, label]) => (
+                      <TableCell key={label} className="text-right">{(r[key] as number | null) ?? "-"}</TableCell>
+                    ))}
+                    <TableCell className="text-right">{r.recommend == null ? "-" : r.recommend ? "추천" : "비추천"}</TableCell>
+                  </TableRow>
+                ))}
+              </TableBody>
+            </Table>
+          </div>
+        )}
+        <div className="text-xs text-muted-foreground">{c.fetched_at} 기준</div>
+      </CardContent>
+    </Card>
   );
 }

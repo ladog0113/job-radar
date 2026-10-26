@@ -67,7 +67,13 @@ export async function makeChecklist(settings: Settings, title: string, company: 
   });
 }
 
-export async function reviewResume(settings: Settings, posting: string, checklist: Checklist, resume: string) {
+export async function reviewResume(
+  settings: Settings,
+  posting: string,
+  checklist: Checklist,
+  resume: string,
+  myCareer: string,
+) {
   return callTool<Review>(settings, {
     system:
       "너는 세 명의 평가자 역할을 각각 수행해 경력기술서를 평가한다.\n" +
@@ -75,10 +81,12 @@ export async function reviewResume(settings: Settings, posting: string, checklis
       "2) 10년차 실무진: 리드급. 문제 정의, 의사결정 근거, 비즈니스 임팩트, 주도성, 연차에 맞는 수준인지를 본다.\n" +
       "3) 인사담당자: 필수 요건 충족, 경력 연수와 이력 흐름, 문서 가독성, 확인이 필요한 리스크를 본다.\n" +
       "합격률은 이 공고에 지원한 일반적인 지원자 풀과 비교한 추정 확률(0~100 정수)이며, 근거 없이 높게 주지 않는다. " +
+      "공고의 요구 연차와 지원자 총 경력의 차이를 반드시 반영하고, 연차가 부족한 상향 지원이면 그 차이를 메울 근거가 경력기술서에 있는지 본다. " +
       "체크리스트 판정은 경력기술서에 적힌 내용만 근거로 하고, evidence에는 경력기술서의 해당 문장을 짧게 인용한다. " +
       "근거가 없으면 미충족으로 판정한다.",
     content:
-      `공고 본문:\n${posting}\n\n체크리스트:\n${JSON.stringify(checklist.items)}\n\n경력기술서:\n${resume}`,
+      `공고 본문:\n${posting}\n\n체크리스트:\n${JSON.stringify(checklist.items)}\n\n` +
+      `지원자 총 경력: ${myCareer}\n\n경력기술서:\n${resume}`,
     name: "submit_review",
     schema: {
       type: "object",
@@ -125,6 +133,7 @@ export async function rewriteResume(
   checklist: Checklist,
   review: Review,
   resume: string,
+  myCareer: string,
 ) {
   return callTool<Rewrite>(settings, {
     system:
@@ -137,7 +146,7 @@ export async function rewriteResume(
       STYLE_RULES,
     content:
       `공고 본문:\n${posting}\n\n체크리스트:\n${JSON.stringify(checklist.items)}\n\n` +
-      `평가 결과:\n${JSON.stringify(review)}\n\n원본 경력기술서:\n${resume}`,
+      `평가 결과:\n${JSON.stringify(review)}\n\n지원자 총 경력: ${myCareer}\n\n원본 경력기술서:\n${resume}`,
     name: "submit_rewrite",
     schema: {
       type: "object",
